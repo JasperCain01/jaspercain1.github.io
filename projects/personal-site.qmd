@@ -1,0 +1,37 @@
+---
+title: "This Website"
+date: 2026-05-01
+description: "Building and iterating on a personal site with Quarto — the decisions, trade-offs, and setup."
+categories: [Quarto, web]
+---
+
+## Overview
+
+This site is built with [Quarto](https://quarto.org), a scientific and technical publishing system based on Pandoc. It deploys automatically to GitHub Pages via GitHub Actions.
+
+**Status:** Live
+
+## Why Quarto?
+
+Quarto makes it easy to mix prose, code, and output in a single document. For a site that will eventually include data analyses and code walkthroughs, that felt like the right foundation.
+
+## Structure
+
+```
+.
+├── _quarto.yml       # site config and sidebar
+├── index.qmd         # landing page
+├── about.qmd         # about me
+├── writing/          # essays and notes
+│   └── index.qmd     # auto-generated listing
+└── projects/         # project write-ups
+    └── index.qmd     # auto-generated listing
+```
+
+## Deployment
+
+The site renders to `docs/` and GitHub Pages serves from that folder on the main branch.
+
+---
+
+*More detail coming soon.*

@@ -1,0 +1,31 @@
+---
+title: "About Me"
+---
+
+## Hi, I'm Jasper
+
+I'm a [your role/profession] based in [your city]. I work on [brief summary of your work — e.g., "data systems, policy research, and open-source tools"]. Before that, I [brief prior experience].
+
+My interests sit at the intersection of [interest 1], [interest 2], and [interest 3]. I'm particularly drawn to questions about [a theme you care about].
+
+When I'm not working you'll find me [hobby/interest].
+
+---
+
+## Work
+
+**[Current Role]** · [Company/Organisation] · *[Year]–present*
+[One-sentence description of what you do here.]
+
+**[Previous Role]** · [Company/Organisation] · *[Year]–[Year]*
+[One-sentence description.]
+
+---
+
+## Elsewhere
+
+::: {.about-links}
+[LinkedIn](https://linkedin.com/in/yourprofile){.btn .btn-outline-primary}
+[GitHub](https://github.com/JasperCain01){.btn .btn-outline-secondary}
+[Email](mailto:your@email.com){.btn .btn-outline-secondary}
+:::

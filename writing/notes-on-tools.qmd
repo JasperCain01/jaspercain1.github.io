@@ -1,0 +1,24 @@
+---
+title: "Notes on Tools"
+date: 2026-03-08
+description: "A short reflection on how the tools we use shape the work we produce."
+categories: [craft, short]
+---
+
+*This is a placeholder essay. Replace this content with your own writing.*
+
+Every craftsperson has opinions about their tools. Writers argue about text editors; photographers argue about cameras; developers argue about languages and frameworks.
+
+## The tool shapes the work
+
+There's a version of this argument that says "a good craftsperson doesn't blame their tools." That's true. But there's a complementary truth: the affordances of a tool quietly shape what you make with it.
+
+Writing in Markdown encourages structure. Writing in a rich text editor encourages flowing prose. Neither is better — they're different.
+
+## Placeholder section
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+---
+
+*More coming soon.*

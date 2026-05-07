@@ -1,0 +1,50 @@
+---
+title: ""
+page-layout: article
+toc: false
+listing:
+  - id: recent-writing
+    contents: "writing/*.qmd"
+    sort: "date desc"
+    type: table
+    max-items: 3
+    fields: [date, title, description]
+    field-display-names:
+      date: "Date"
+      title: "Title"
+      description: "Summary"
+  - id: recent-projects
+    contents: "projects/*.qmd"
+    sort: "date desc"
+    type: table
+    max-items: 3
+    fields: [date, title, description]
+    field-display-names:
+      date: "Date"
+      title: "Title"
+      description: "Summary"
+---
+
+::: {.hero}
+# Jasper Cain
+
+::: {.subtitle}
+Writing about technology, ideas, and the projects I'm building.
+:::
+:::
+
+## Recent Writing {.section-heading}
+
+:::{#recent-writing}
+:::
+
+[View all writing →](writing/index.qmd)
+
+---
+
+## Recent Projects {.section-heading}
+
+:::{#recent-projects}
+:::
+
+[View all projects →](projects/index.qmd)

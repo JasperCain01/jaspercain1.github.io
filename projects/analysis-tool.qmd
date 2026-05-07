@@ -1,0 +1,44 @@
+---
+title: "Exploratory Analysis Tool"
+date: 2026-02-10
+description: "A small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations."
+categories: [Python, data analysis, viz]
+---
+
+## Overview
+
+Before diving into any dataset I find myself running the same exploratory checks: distributions, missing values, correlations, outliers. This tool automates those first steps into a single command.
+
+**Status:** Prototype
+
+## Motivation
+
+The goal is to get from "here is a CSV" to "I understand the shape of this data" in under a minute, without writing boilerplate.
+
+## Tech stack
+
+- **Language:** Python 3.11
+- **Visualisation:** Plotly / `great_tables`
+- **Interface:** CLI + HTML report output
+
+## Key features
+
+- Numeric column profiling (min, max, mean, p25/p75, histogram)
+- Missing data heatmap
+- Pairwise correlation matrix
+- Exports a self-contained HTML report
+
+## Usage
+
+```bash
+# Profile a CSV
+python profile.py --input data.csv --output report.html
+```
+
+## Code
+
+*[GitHub repository link — placeholder]*
+
+---
+
+*More detail coming soon.*

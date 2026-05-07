@@ -1,0 +1,24 @@
+---
+title: "The Case for Slow Reading"
+date: 2026-01-22
+description: "In an era of infinite content, there is something quietly radical about reading one thing carefully."
+categories: [ideas, culture]
+---
+
+*This is a placeholder essay. Replace this content with your own writing.*
+
+We live in an age of abundance. More is published every day than any one person could read in a lifetime. The natural response is to develop speed — to skim, to summarise, to consume.
+
+## What you miss at speed
+
+Slow reading is not just about retention. It is about noticing. When you slow down you begin to see the structure of an argument, the rhythm of a sentence, the choice of a single word.
+
+## A personal practice
+
+Placeholder text describing a reading practice or approach.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+
+---
+
+*More coming soon.*

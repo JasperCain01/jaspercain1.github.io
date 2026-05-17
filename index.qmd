@@ -42,11 +42,8 @@ Serving the broader NHS analytical community and contributing to discussions abo
 [Email](mailto:jcainsecondemail@gmail.com){.btn .btn-outline-secondary}
 :::
 
----
+::: {.aside}
 
-::: {.columns}
-
-::: {.column width="60%"}
 ## Recent Writing
 
 **[Notes on Tools](writing/notes-on-tools.qmd)**
@@ -59,9 +56,9 @@ Exploring how to think systematically about complex problems.
 Why slowing down matters in an age of information overload.
 
 [View all writing →](writing/index.qmd)
-:::
 
-::: {.column width="40%"}
+---
+
 ## Recent Projects
 
 **[This Website](projects/personal-site.qmd)**
@@ -74,6 +71,5 @@ Automating data workflows for reliability and scale.
 Building tools that make analysis more efficient.
 
 [View all projects →](projects/index.qmd)
-:::
 
 :::

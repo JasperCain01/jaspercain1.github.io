@@ -119,16 +119,6 @@
     ]
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "This Website\n\n\n\nQuarto\n\nweb\n\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\nMay 1, 2026\n\n\n\n\n\n\n\nAutomated Data Pipeline\n\n\n\nPython\n\ndata engineering\n\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nExploratory Analysis Tool\n\n\n\nPython\n\ndata analysis\n\nviz\n\n\n\nA small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.\n\n\n\n\n\nFeb 10, 2026\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
     "objectID": "projects/personal-site.html",
     "href": "projects/personal-site.html",
     "title": "This Website",
@@ -162,48 +152,6 @@
     "title": "This Website",
     "section": "Deployment",
     "text": "Deployment\nThe site renders to docs/ and GitHub Pages serves from that folder on the main branch.\n\nMore detail coming soon."
-  },
-  {
-    "objectID": "projects/data-pipeline.html",
-    "href": "projects/data-pipeline.html",
-    "title": "Automated Data Pipeline",
-    "section": "",
-    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
-  },
-  {
-    "objectID": "projects/data-pipeline.html#overview",
-    "href": "projects/data-pipeline.html#overview",
-    "title": "Automated Data Pipeline",
-    "section": "",
-    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
-  },
-  {
-    "objectID": "projects/data-pipeline.html#motivation",
-    "href": "projects/data-pipeline.html#motivation",
-    "title": "Automated Data Pipeline",
-    "section": "Motivation",
-    "text": "Motivation\nI kept needing to do the same data wrangling steps across different projects. This is an attempt to make that reusable."
-  },
-  {
-    "objectID": "projects/data-pipeline.html#tech-stack",
-    "href": "projects/data-pipeline.html#tech-stack",
-    "title": "Automated Data Pipeline",
-    "section": "Tech stack",
-    "text": "Tech stack\n\nLanguage: Python 3.11\nDatabase: DuckDB\nScheduling: Cron / GitHub Actions\nDependencies: httpx, polars, duckdb"
-  },
-  {
-    "objectID": "projects/data-pipeline.html#key-features",
-    "href": "projects/data-pipeline.html#key-features",
-    "title": "Automated Data Pipeline",
-    "section": "Key features",
-    "text": "Key features\n\nIncremental loading — only fetches records newer than the last run\nSchema validation on ingestion\nLightweight CLI interface"
-  },
-  {
-    "objectID": "projects/data-pipeline.html#code",
-    "href": "projects/data-pipeline.html#code",
-    "title": "Automated Data Pipeline",
-    "section": "Code",
-    "text": "Code\n[GitHub repository link — placeholder]\n# Example: loading a single source\nfrom pipeline import load_source\n\nload_source(\"api_name\", since=\"2026-01-01\")\n\nMore detail coming soon."
   },
   {
     "objectID": "projects/analysis-tool.html",
@@ -253,6 +201,58 @@
     "title": "Exploratory Analysis Tool",
     "section": "Code",
     "text": "Code\n[GitHub repository link — placeholder]\n\nMore detail coming soon."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This Website\n\n\n\nQuarto\n\nweb\n\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\nMay 1, 2026\n\n\n\n\n\n\n\nAutomated Data Pipeline\n\n\n\nPython\n\ndata engineering\n\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nExploratory Analysis Tool\n\n\n\nPython\n\ndata analysis\n\nviz\n\n\n\nA small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.\n\n\n\n\n\nFeb 10, 2026\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/data-pipeline.html",
+    "href": "projects/data-pipeline.html",
+    "title": "Automated Data Pipeline",
+    "section": "",
+    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#overview",
+    "href": "projects/data-pipeline.html#overview",
+    "title": "Automated Data Pipeline",
+    "section": "",
+    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#motivation",
+    "href": "projects/data-pipeline.html#motivation",
+    "title": "Automated Data Pipeline",
+    "section": "Motivation",
+    "text": "Motivation\nI kept needing to do the same data wrangling steps across different projects. This is an attempt to make that reusable."
+  },
+  {
+    "objectID": "projects/data-pipeline.html#tech-stack",
+    "href": "projects/data-pipeline.html#tech-stack",
+    "title": "Automated Data Pipeline",
+    "section": "Tech stack",
+    "text": "Tech stack\n\nLanguage: Python 3.11\nDatabase: DuckDB\nScheduling: Cron / GitHub Actions\nDependencies: httpx, polars, duckdb"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#key-features",
+    "href": "projects/data-pipeline.html#key-features",
+    "title": "Automated Data Pipeline",
+    "section": "Key features",
+    "text": "Key features\n\nIncremental loading — only fetches records newer than the last run\nSchema validation on ingestion\nLightweight CLI interface"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#code",
+    "href": "projects/data-pipeline.html#code",
+    "title": "Automated Data Pipeline",
+    "section": "Code",
+    "text": "Code\n[GitHub repository link — placeholder]\n# Example: loading a single source\nfrom pipeline import load_source\n\nload_source(\"api_name\", since=\"2026-01-01\")\n\nMore detail coming soon."
   },
   {
     "objectID": "writing/notes-on-tools.html",

@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a [your role/profession] based in [your city]. I work on [brief summary of your work — e.g., “data systems, policy research, and open-source tools”]. Before that, I [brief prior experience].\nMy interests sit at the intersection of [interest 1], [interest 2], and [interest 3]. I’m particularly drawn to questions about [a theme you care about].\nWhen I’m not working you’ll find me [hobby/interest].",
+    "crumbs": [
+      "About Me"
+    ]
+  },
+  {
+    "objectID": "about.html#hi-im-jasper",
+    "href": "about.html#hi-im-jasper",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a [your role/profession] based in [your city]. I work on [brief summary of your work — e.g., “data systems, policy research, and open-source tools”]. Before that, I [brief prior experience].\nMy interests sit at the intersection of [interest 1], [interest 2], and [interest 3]. I’m particularly drawn to questions about [a theme you care about].\nWhen I’m not working you’ll find me [hobby/interest].",
+    "crumbs": [
+      "About Me"
+    ]
+  },
+  {
+    "objectID": "about.html#work",
+    "href": "about.html#work",
+    "title": "About Me",
+    "section": "Work",
+    "text": "Work\n[Current Role] · [Company/Organisation] · [Year]–present [One-sentence description of what you do here.]\n[Previous Role] · [Company/Organisation] · [Year]–[Year] [One-sentence description.]",
+    "crumbs": [
+      "About Me"
+    ]
+  },
+  {
+    "objectID": "about.html#elsewhere",
+    "href": "about.html#elsewhere",
+    "title": "About Me",
+    "section": "Elsewhere",
+    "text": "Elsewhere\n\nLinkedIn GitHub Email",
+    "crumbs": [
+      "About Me"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "Writing about technology, ideas, and the projects I’m building.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#recent-writing",
+    "href": "index.html#recent-writing",
+    "title": "Jasper Cain",
+    "section": "Recent Writing",
+    "text": "Recent Writing\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nSummary\n\n\n\n\n\n\n\n\n \n\n\nWriting\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\nOn Systems Thinking\n\n\nWhy understanding feedback loops changes the way you see almost everything.\n\n\n\n\n\n\nMar 8, 2026\n\n\nNotes on Tools\n\n\nA short reflection on how the tools we use shape the work we produce.\n\n\n\n\n\n\nNo matching items\n\nView all writing →",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Jasper Cain",
+    "section": "Recent Projects",
+    "text": "Recent Projects\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nSummary\n\n\n\n\n\n\n\n\n \n\n\nProjects\n\n\n\n\n\n\n\n\n\nMay 1, 2026\n\n\nThis Website\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\n\nApr 20, 2026\n\n\nAutomated Data Pipeline\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\n\nNo matching items\n\nView all projects →",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]

@@ -119,6 +119,30 @@
     ]
   },
   {
+    "objectID": "projects/statistics-methods-primer.html",
+    "href": "projects/statistics-methods-primer.html",
+    "title": "Statistics Methods Primer",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
+    "objectID": "projects/qvdr.html",
+    "href": "projects/qvdr.html",
+    "title": "qvdr",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This Website\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\n\n\n\n\nAutomated Data Pipeline\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\n\n\n\n\nExploratory Analysis Tool\n\n\nA small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.\n\n\n\n\n\n\n\n\n\nqvdr\n\n\nAn R package that reads QVD (QlikView Data) binary files into R tibbles. QVD is Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval.\n\n\n\n\n\n\n\n\n\nStatistics Methods Primer\n\n\nTO BE UPDATED\n\n\n\n\n\n\n\n\n\nRecipe App\n\n\nTO BE UPDATED\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
     "objectID": "projects/analysis-tool.html",
     "href": "projects/analysis-tool.html",
     "title": "Exploratory Analysis Tool",
@@ -168,6 +192,48 @@
     "text": "Code\n[GitHub repository link — placeholder]\n\nMore detail coming soon."
   },
   {
+    "objectID": "projects/personal-site.html",
+    "href": "projects/personal-site.html",
+    "title": "This Website",
+    "section": "",
+    "text": "This site is built with Quarto, a scientific and technical publishing system based on Pandoc. It deploys automatically to GitHub Pages via GitHub Actions.\nStatus: Live"
+  },
+  {
+    "objectID": "projects/personal-site.html#overview",
+    "href": "projects/personal-site.html#overview",
+    "title": "This Website",
+    "section": "",
+    "text": "This site is built with Quarto, a scientific and technical publishing system based on Pandoc. It deploys automatically to GitHub Pages via GitHub Actions.\nStatus: Live"
+  },
+  {
+    "objectID": "projects/personal-site.html#why-quarto",
+    "href": "projects/personal-site.html#why-quarto",
+    "title": "This Website",
+    "section": "Why Quarto?",
+    "text": "Why Quarto?\nQuarto makes it easy to mix prose, code, and output in a single document. For a site that will eventually include data analyses and code walkthroughs, that felt like the right foundation."
+  },
+  {
+    "objectID": "projects/personal-site.html#structure",
+    "href": "projects/personal-site.html#structure",
+    "title": "This Website",
+    "section": "Structure",
+    "text": "Structure\n.\n├── _quarto.yml       # site config and sidebar\n├── index.qmd         # landing page\n├── about.qmd         # about me\n├── writing/          # essays and notes\n│   └── index.qmd     # auto-generated listing\n└── projects/         # project write-ups\n    └── index.qmd     # auto-generated listing"
+  },
+  {
+    "objectID": "projects/personal-site.html#deployment",
+    "href": "projects/personal-site.html#deployment",
+    "title": "This Website",
+    "section": "Deployment",
+    "text": "Deployment\nThe site renders to docs/ and GitHub Pages serves from that folder on the main branch.\n\nMore detail coming soon."
+  },
+  {
+    "objectID": "projects/recipe-app.html",
+    "href": "projects/recipe-app.html",
+    "title": "Recipe App",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
     "objectID": "projects/data-pipeline.html",
     "href": "projects/data-pipeline.html",
     "title": "Automated Data Pipeline",
@@ -208,72 +274,6 @@
     "title": "Automated Data Pipeline",
     "section": "Code",
     "text": "Code\n[GitHub repository link — placeholder]\n# Example: loading a single source\nfrom pipeline import load_source\n\nload_source(\"api_name\", since=\"2026-01-01\")\n\nMore detail coming soon."
-  },
-  {
-    "objectID": "projects/statistics-methods-primer.html",
-    "href": "projects/statistics-methods-primer.html",
-    "title": "Statistics Methods Primer",
-    "section": "",
-    "text": "View on GitHub →"
-  },
-  {
-    "objectID": "projects/qvdr.html",
-    "href": "projects/qvdr.html",
-    "title": "qvdr",
-    "section": "",
-    "text": "View on GitHub →"
-  },
-  {
-    "objectID": "projects/personal-site.html",
-    "href": "projects/personal-site.html",
-    "title": "This Website",
-    "section": "",
-    "text": "This site is built with Quarto, a scientific and technical publishing system based on Pandoc. It deploys automatically to GitHub Pages via GitHub Actions.\nStatus: Live"
-  },
-  {
-    "objectID": "projects/personal-site.html#overview",
-    "href": "projects/personal-site.html#overview",
-    "title": "This Website",
-    "section": "",
-    "text": "This site is built with Quarto, a scientific and technical publishing system based on Pandoc. It deploys automatically to GitHub Pages via GitHub Actions.\nStatus: Live"
-  },
-  {
-    "objectID": "projects/personal-site.html#why-quarto",
-    "href": "projects/personal-site.html#why-quarto",
-    "title": "This Website",
-    "section": "Why Quarto?",
-    "text": "Why Quarto?\nQuarto makes it easy to mix prose, code, and output in a single document. For a site that will eventually include data analyses and code walkthroughs, that felt like the right foundation."
-  },
-  {
-    "objectID": "projects/personal-site.html#structure",
-    "href": "projects/personal-site.html#structure",
-    "title": "This Website",
-    "section": "Structure",
-    "text": "Structure\n.\n├── _quarto.yml       # site config and sidebar\n├── index.qmd         # landing page\n├── about.qmd         # about me\n├── writing/          # essays and notes\n│   └── index.qmd     # auto-generated listing\n└── projects/         # project write-ups\n    └── index.qmd     # auto-generated listing"
-  },
-  {
-    "objectID": "projects/personal-site.html#deployment",
-    "href": "projects/personal-site.html#deployment",
-    "title": "This Website",
-    "section": "Deployment",
-    "text": "Deployment\nThe site renders to docs/ and GitHub Pages serves from that folder on the main branch.\n\nMore detail coming soon."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "This Website\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\n\n\n\n\nAutomated Data Pipeline\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\n\n\n\n\nExploratory Analysis Tool\n\n\nA small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.\n\n\n\n\n\n\n\n\n\nqvdr\n\n\nAn R package that reads QVD (QlikView Data) binary files into R tibbles. QVD is Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval.\n\n\n\n\n\n\n\n\n\nStatistics Methods Primer\n\n\nTO BE UPDATED\n\n\n\n\n\n\n\n\n\nRecipe App\n\n\nTO BE UPDATED\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/recipe-app.html",
-    "href": "projects/recipe-app.html",
-    "title": "Recipe App",
-    "section": "",
-    "text": "View on GitHub →"
   },
   {
     "objectID": "writing/notes-on-tools.html",

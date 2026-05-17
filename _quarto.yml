@@ -17,12 +17,9 @@ website:
         text: "Writing"
       - href: projects/index.qmd
         text: "Projects"
-      - section: "Recent"
-        contents:
-          - text: "Latest Writing"
-            href: writing/index.qmd
-          - text: "Latest Projects"
-            href: projects/index.qmd
+    tools:
+      - icon: github
+        href: https://github.com/JasperCain01
 
   page-footer:
     center: "© 2026 Jasper Cain"

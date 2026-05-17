@@ -1,6 +1,5 @@
 ---
 title: ""
-page-layout: article
 toc: false
 ---
 

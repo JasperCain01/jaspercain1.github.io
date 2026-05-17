@@ -13,12 +13,16 @@ website:
     contents:
       - href: index.qmd
         text: "Home"
-      - href: about.qmd
-        text: "About Me"
       - href: writing/index.qmd
         text: "Writing"
       - href: projects/index.qmd
         text: "Projects"
+      - section: "Recent"
+        contents:
+          - text: "Latest Writing"
+            href: writing/index.qmd
+          - text: "Latest Projects"
+            href: projects/index.qmd
 
   page-footer:
     center: "© 2026 Jasper Cain"

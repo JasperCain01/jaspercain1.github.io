@@ -2,49 +2,43 @@
 title: ""
 page-layout: article
 toc: false
-listing:
-  - id: recent-writing
-    contents: "writing/*.qmd"
-    sort: "date desc"
-    type: table
-    max-items: 3
-    fields: [date, title, description]
-    field-display-names:
-      date: "Date"
-      title: "Title"
-      description: "Summary"
-  - id: recent-projects
-    contents: "projects/*.qmd"
-    sort: "date desc"
-    type: table
-    max-items: 3
-    fields: [date, title, description]
-    field-display-names:
-      date: "Date"
-      title: "Title"
-      description: "Summary"
 ---
 
-::: {.hero}
-# Jasper Cain
+## Hi, I'm Jasper
 
-::: {.subtitle}
-Writing about technology, ideas, and the projects I'm building.
-:::
-:::
+I'm a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.
 
-## Recent Writing {.section-heading}
+My background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.
 
-:::{#recent-writing}
-:::
+## What I'm interested in
 
-[View all writing →](writing/index.qmd)
+I'm fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it's meant to inform. I'm also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.
+
+Beyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.
+
+Recently I've been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what's possible. I'm still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.
+
+This site is partly where I do that thinking out loud, and I'm as interested in the conversations it might start as anything I might have to say myself.
 
 ---
 
-## Recent Projects {.section-heading}
+## Work
 
-:::{#recent-projects}
+**Principal Analyst** · Nottingham University Hospitals NHS Trust · *present*
+Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.
+
+**Chartered Accountant (ACCA)** · NHS Internal Audit · *previous*
+Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.
+
+**Deputy Director of Finance** · Association of Professional Healthcare Analysts · *ongoing*
+Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.
+
+---
+
+## Get in touch
+
+::: {.about-links}
+[LinkedIn](https://linkedin.com/in/yourprofile){.btn .btn-outline-primary}
+[GitHub](https://github.com/JasperCain01){.btn .btn-outline-secondary}
+[Email](mailto:jcainsecondemail@gmail.com){.btn .btn-outline-secondary}
 :::
-
-[View all projects →](projects/index.qmd)

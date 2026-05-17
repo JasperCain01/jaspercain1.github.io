@@ -284,5 +284,251 @@
     "crumbs": [
       "Writing"
     ]
+  },
+  {
+    "objectID": "writing/index.html",
+    "href": "writing/index.html",
+    "title": "Writing",
+    "section": "",
+    "text": "On Systems Thinking\n\n\n\nideas\n\nessay\n\n\n\nWhy understanding feedback loops changes the way you see almost everything.\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\n\nNotes on Tools\n\n\n\ncraft\n\nshort\n\n\n\nA short reflection on how the tools we use shape the work we produce.\n\n\n\n\n\nMar 8, 2026\n\n\n\n\n\n\n\nThe Case for Slow Reading\n\n\n\nideas\n\nculture\n\n\n\nIn an era of infinite content, there is something quietly radical about reading one thing carefully.\n\n\n\n\n\nJan 22, 2026\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Writing"
+    ]
+  },
+  {
+    "objectID": "writing/notes-on-tools.html",
+    "href": "writing/notes-on-tools.html",
+    "title": "Notes on Tools",
+    "section": "",
+    "text": "This is a placeholder essay. Replace this content with your own writing.\nEvery craftsperson has opinions about their tools. Writers argue about text editors; photographers argue about cameras; developers argue about languages and frameworks."
+  },
+  {
+    "objectID": "writing/notes-on-tools.html#the-tool-shapes-the-work",
+    "href": "writing/notes-on-tools.html#the-tool-shapes-the-work",
+    "title": "Notes on Tools",
+    "section": "The tool shapes the work",
+    "text": "The tool shapes the work\nThere’s a version of this argument that says “a good craftsperson doesn’t blame their tools.” That’s true. But there’s a complementary truth: the affordances of a tool quietly shape what you make with it.\nWriting in Markdown encourages structure. Writing in a rich text editor encourages flowing prose. Neither is better — they’re different."
+  },
+  {
+    "objectID": "writing/notes-on-tools.html#placeholder-section",
+    "href": "writing/notes-on-tools.html#placeholder-section",
+    "title": "Notes on Tools",
+    "section": "Placeholder section",
+    "text": "Placeholder section\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nMore coming soon."
+  },
+  {
+    "objectID": "projects/data-pipeline.html",
+    "href": "projects/data-pipeline.html",
+    "title": "Automated Data Pipeline",
+    "section": "",
+    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#overview",
+    "href": "projects/data-pipeline.html#overview",
+    "title": "Automated Data Pipeline",
+    "section": "",
+    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#motivation",
+    "href": "projects/data-pipeline.html#motivation",
+    "title": "Automated Data Pipeline",
+    "section": "Motivation",
+    "text": "Motivation\nI kept needing to do the same data wrangling steps across different projects. This is an attempt to make that reusable."
+  },
+  {
+    "objectID": "projects/data-pipeline.html#tech-stack",
+    "href": "projects/data-pipeline.html#tech-stack",
+    "title": "Automated Data Pipeline",
+    "section": "Tech stack",
+    "text": "Tech stack\n\nLanguage: Python 3.11\nDatabase: DuckDB\nScheduling: Cron / GitHub Actions\nDependencies: httpx, polars, duckdb"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#key-features",
+    "href": "projects/data-pipeline.html#key-features",
+    "title": "Automated Data Pipeline",
+    "section": "Key features",
+    "text": "Key features\n\nIncremental loading — only fetches records newer than the last run\nSchema validation on ingestion\nLightweight CLI interface"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#code",
+    "href": "projects/data-pipeline.html#code",
+    "title": "Automated Data Pipeline",
+    "section": "Code",
+    "text": "Code\n[GitHub repository link — placeholder]\n# Example: loading a single source\nfrom pipeline import load_source\n\nload_source(\"api_name\", since=\"2026-01-01\")\n\nMore detail coming soon."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This Website\n\n\n\nQuarto\n\nweb\n\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\nMay 1, 2026\n\n\n\n\n\n\n\nAutomated Data Pipeline\n\n\n\nPython\n\ndata engineering\n\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nExploratory Analysis Tool\n\n\n\nPython\n\ndata analysis\n\nviz\n\n\n\nA small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.\n\n\n\n\n\nFeb 10, 2026\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/analysis-tool.html",
+    "href": "projects/analysis-tool.html",
+    "title": "Exploratory Analysis Tool",
+    "section": "",
+    "text": "Before diving into any dataset I find myself running the same exploratory checks: distributions, missing values, correlations, outliers. This tool automates those first steps into a single command.\nStatus: Prototype"
+  },
+  {
+    "objectID": "projects/analysis-tool.html#overview",
+    "href": "projects/analysis-tool.html#overview",
+    "title": "Exploratory Analysis Tool",
+    "section": "",
+    "text": "Before diving into any dataset I find myself running the same exploratory checks: distributions, missing values, correlations, outliers. This tool automates those first steps into a single command.\nStatus: Prototype"
+  },
+  {
+    "objectID": "projects/analysis-tool.html#motivation",
+    "href": "projects/analysis-tool.html#motivation",
+    "title": "Exploratory Analysis Tool",
+    "section": "Motivation",
+    "text": "Motivation\nThe goal is to get from “here is a CSV” to “I understand the shape of this data” in under a minute, without writing boilerplate."
+  },
+  {
+    "objectID": "projects/analysis-tool.html#tech-stack",
+    "href": "projects/analysis-tool.html#tech-stack",
+    "title": "Exploratory Analysis Tool",
+    "section": "Tech stack",
+    "text": "Tech stack\n\nLanguage: Python 3.11\nVisualisation: Plotly / great_tables\nInterface: CLI + HTML report output"
+  },
+  {
+    "objectID": "projects/analysis-tool.html#key-features",
+    "href": "projects/analysis-tool.html#key-features",
+    "title": "Exploratory Analysis Tool",
+    "section": "Key features",
+    "text": "Key features\n\nNumeric column profiling (min, max, mean, p25/p75, histogram)\nMissing data heatmap\nPairwise correlation matrix\nExports a self-contained HTML report"
+  },
+  {
+    "objectID": "projects/analysis-tool.html#usage",
+    "href": "projects/analysis-tool.html#usage",
+    "title": "Exploratory Analysis Tool",
+    "section": "Usage",
+    "text": "Usage\n# Profile a CSV\npython profile.py --input data.csv --output report.html"
+  },
+  {
+    "objectID": "projects/analysis-tool.html#code",
+    "href": "projects/analysis-tool.html#code",
+    "title": "Exploratory Analysis Tool",
+    "section": "Code",
+    "text": "Code\n[GitHub repository link — placeholder]\n\nMore detail coming soon."
+  },
+  {
+    "objectID": "projects/personal-site.html",
+    "href": "projects/personal-site.html",
+    "title": "This Website",
+    "section": "",
+    "text": "This site is built with Quarto, a scientific and technical publishing system based on Pandoc. It deploys automatically to GitHub Pages via GitHub Actions.\nStatus: Live"
+  },
+  {
+    "objectID": "projects/personal-site.html#overview",
+    "href": "projects/personal-site.html#overview",
+    "title": "This Website",
+    "section": "",
+    "text": "This site is built with Quarto, a scientific and technical publishing system based on Pandoc. It deploys automatically to GitHub Pages via GitHub Actions.\nStatus: Live"
+  },
+  {
+    "objectID": "projects/personal-site.html#why-quarto",
+    "href": "projects/personal-site.html#why-quarto",
+    "title": "This Website",
+    "section": "Why Quarto?",
+    "text": "Why Quarto?\nQuarto makes it easy to mix prose, code, and output in a single document. For a site that will eventually include data analyses and code walkthroughs, that felt like the right foundation."
+  },
+  {
+    "objectID": "projects/personal-site.html#structure",
+    "href": "projects/personal-site.html#structure",
+    "title": "This Website",
+    "section": "Structure",
+    "text": "Structure\n.\n├── _quarto.yml       # site config and sidebar\n├── index.qmd         # landing page\n├── about.qmd         # about me\n├── writing/          # essays and notes\n│   └── index.qmd     # auto-generated listing\n└── projects/         # project write-ups\n    └── index.qmd     # auto-generated listing"
+  },
+  {
+    "objectID": "projects/personal-site.html#deployment",
+    "href": "projects/personal-site.html#deployment",
+    "title": "This Website",
+    "section": "Deployment",
+    "text": "Deployment\nThe site renders to docs/ and GitHub Pages serves from that folder on the main branch.\n\nMore detail coming soon."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "Writing about technology, ideas, and the projects I’m building.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#recent-writing",
+    "href": "index.html#recent-writing",
+    "title": "Jasper Cain",
+    "section": "Recent Writing",
+    "text": "Recent Writing\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nSummary\n\n\n\n\n\n\n\n\n \n\n\nWriting\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\nOn Systems Thinking\n\n\nWhy understanding feedback loops changes the way you see almost everything.\n\n\n\n\n\n\nMar 8, 2026\n\n\nNotes on Tools\n\n\nA short reflection on how the tools we use shape the work we produce.\n\n\n\n\n\n\nNo matching items\n\nView all writing →",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Jasper Cain",
+    "section": "Recent Projects",
+    "text": "Recent Projects\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nSummary\n\n\n\n\n\n\n\n\n \n\n\nProjects\n\n\n\n\n\n\n\n\n\nMay 1, 2026\n\n\nThis Website\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\n\nApr 20, 2026\n\n\nAutomated Data Pipeline\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\n\nNo matching items\n\nView all projects →",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "writing/on-systems-thinking.html",
+    "href": "writing/on-systems-thinking.html",
+    "title": "On Systems Thinking",
+    "section": "",
+    "text": "This is a placeholder essay. Replace this content with your own writing.\nSystems thinking is the art of seeing wholes rather than parts — recognising that the world is composed of interacting loops, not linear chains of cause and effect."
+  },
+  {
+    "objectID": "writing/on-systems-thinking.html#the-feedback-loop-problem",
+    "href": "writing/on-systems-thinking.html#the-feedback-loop-problem",
+    "title": "On Systems Thinking",
+    "section": "The feedback loop problem",
+    "text": "The feedback loop problem\nMost of us are trained to think in straight lines. A causes B, B causes C. But in practice, C loops back and changes A. The economy, the climate, a software codebase, a team — all of these are systems where outputs become inputs."
+  },
+  {
+    "objectID": "writing/on-systems-thinking.html#why-this-matters",
+    "href": "writing/on-systems-thinking.html#why-this-matters",
+    "title": "On Systems Thinking",
+    "section": "Why this matters",
+    "text": "Why this matters\nWhen you try to fix a system problem by pushing on one variable without understanding the loops, you often make things worse. The drug that suppresses symptoms can mask the underlying cause. The policy that targets one metric can distort another."
+  },
+  {
+    "objectID": "writing/on-systems-thinking.html#placeholder-section",
+    "href": "writing/on-systems-thinking.html#placeholder-section",
+    "title": "On Systems Thinking",
+    "section": "Placeholder section",
+    "text": "Placeholder section\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.\n\nMore coming soon."
+  },
+  {
+    "objectID": "writing/the-case-for-slow-reading.html",
+    "href": "writing/the-case-for-slow-reading.html",
+    "title": "The Case for Slow Reading",
+    "section": "",
+    "text": "This is a placeholder essay. Replace this content with your own writing.\nWe live in an age of abundance. More is published every day than any one person could read in a lifetime. The natural response is to develop speed — to skim, to summarise, to consume."
+  },
+  {
+    "objectID": "writing/the-case-for-slow-reading.html#what-you-miss-at-speed",
+    "href": "writing/the-case-for-slow-reading.html#what-you-miss-at-speed",
+    "title": "The Case for Slow Reading",
+    "section": "What you miss at speed",
+    "text": "What you miss at speed\nSlow reading is not just about retention. It is about noticing. When you slow down you begin to see the structure of an argument, the rhythm of a sentence, the choice of a single word."
+  },
+  {
+    "objectID": "writing/the-case-for-slow-reading.html#a-personal-practice",
+    "href": "writing/the-case-for-slow-reading.html#a-personal-practice",
+    "title": "The Case for Slow Reading",
+    "section": "A personal practice",
+    "text": "A personal practice\nPlaceholder text describing a reading practice or approach.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.\n\nMore coming soon."
   }
 ]

@@ -3,11 +3,14 @@ title: "Projects"
 listing:
   contents: "*.qmd"
   sort: "date desc"
-  type: default
-  categories: true
+  type: grid
+  grid-columns: 1
+  categories: false
   sort-ui: false
   filter-ui: false
-  fields: [date, title, description, categories]
+  fields: [title, description]
+  page-size: 100
+  image-height: 0px
 page-layout: full
 toc: false
 ---

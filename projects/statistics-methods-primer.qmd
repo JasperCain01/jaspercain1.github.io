@@ -1,0 +1,6 @@
+---
+title: "Statistics Methods Primer"
+description: "TO BE UPDATED"
+date: 2024-01-10
+repo: "https://github.com/JasperCain01/statistics_methods_primer"
+---

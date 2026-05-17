@@ -210,6 +210,20 @@
     "text": "Code\n[GitHub repository link — placeholder]\n# Example: loading a single source\nfrom pipeline import load_source\n\nload_source(\"api_name\", since=\"2026-01-01\")\n\nMore detail coming soon."
   },
   {
+    "objectID": "projects/statistics-methods-primer.html",
+    "href": "projects/statistics-methods-primer.html",
+    "title": "Statistics Methods Primer",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
+    "objectID": "projects/qvdr.html",
+    "href": "projects/qvdr.html",
+    "title": "qvdr",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
     "objectID": "projects/personal-site.html",
     "href": "projects/personal-site.html",
     "title": "This Website",
@@ -253,6 +267,13 @@
     "crumbs": [
       "Projects"
     ]
+  },
+  {
+    "objectID": "projects/recipe-app.html",
+    "href": "projects/recipe-app.html",
+    "title": "Recipe App",
+    "section": "",
+    "text": "View on GitHub →"
   },
   {
     "objectID": "writing/notes-on-tools.html",

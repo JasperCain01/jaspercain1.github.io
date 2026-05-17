@@ -4,3 +4,5 @@ description: "An R package that reads QVD (QlikView Data) binary files into R ti
 date: 2024-01-15
 repo: "https://github.com/JasperCain01/qvdr"
 ---
+
+[View on GitHub →](https://github.com/JasperCain01/qvdr){.btn .btn-outline-primary .btn-sm}

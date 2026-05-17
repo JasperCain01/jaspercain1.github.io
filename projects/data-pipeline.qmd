@@ -1,0 +1,44 @@
+---
+title: "Automated Data Pipeline"
+date: 2026-04-20
+description: "A lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis."
+categories: [Python, data engineering]
+---
+
+## Overview
+
+This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.
+
+**Status:** Active development
+
+## Motivation
+
+I kept needing to do the same data wrangling steps across different projects. This is an attempt to make that reusable.
+
+## Tech stack
+
+- **Language:** Python 3.11
+- **Database:** DuckDB
+- **Scheduling:** Cron / GitHub Actions
+- **Dependencies:** `httpx`, `polars`, `duckdb`
+
+## Key features
+
+- Incremental loading — only fetches records newer than the last run
+- Schema validation on ingestion
+- Lightweight CLI interface
+
+## Code
+
+*[GitHub repository link — placeholder]*
+
+```python
+# Example: loading a single source
+from pipeline import load_source
+
+load_source("api_name", since="2026-01-01")
+```
+
+---
+
+*More detail coming soon.*

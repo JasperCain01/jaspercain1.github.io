@@ -1,0 +1,26 @@
+---
+title: "On Systems Thinking"
+date: 2026-04-15
+description: "Why understanding feedback loops changes the way you see almost everything."
+categories: [ideas, essay]
+---
+
+*This is a placeholder essay. Replace this content with your own writing.*
+
+Systems thinking is the art of seeing wholes rather than parts — recognising that the world is composed of interacting loops, not linear chains of cause and effect.
+
+## The feedback loop problem
+
+Most of us are trained to think in straight lines. A causes B, B causes C. But in practice, C loops back and changes A. The economy, the climate, a software codebase, a team — all of these are systems where outputs become inputs.
+
+## Why this matters
+
+When you try to fix a system problem by pushing on one variable without understanding the loops, you often make things worse. The drug that suppresses symptoms can mask the underlying cause. The policy that targets one metric can distort another.
+
+## Placeholder section
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+---
+
+*More coming soon.*

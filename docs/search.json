@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "Jasper Cain",
     "section": "",
-    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.",
+    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.\n\n\n\nI’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.\n\n\n\n\nPrincipal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.\n\n\n\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\n\nNotes on Tools A short reflection on how the tools we use shape the work we produce.\nOn Systems Thinking Exploring how to think systematically about complex problems.\nThe Case for Slow Reading Why slowing down matters in an age of information overload.\nView all writing →\n\n\n\n\nThis Website Building and iterating on a personal site with Quarto.\nData Pipeline Automating data workflows for reliability and scale.\nAnalysis Tool Building tools that make analysis more efficient.\nView all projects →",
     "crumbs": [
       "Home"
     ]
@@ -72,8 +72,8 @@
     "objectID": "index.html#what-im-interested-in",
     "href": "index.html#what-im-interested-in",
     "title": "Jasper Cain",
-    "section": "What I’m interested in",
-    "text": "What I’m interested in\nI’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.",
+    "section": "",
+    "text": "I’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.",
     "crumbs": [
       "Home"
     ]
@@ -82,8 +82,8 @@
     "objectID": "index.html#work",
     "href": "index.html#work",
     "title": "Jasper Cain",
-    "section": "Work",
-    "text": "Work\nPrincipal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.",
+    "section": "",
+    "text": "Principal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.",
     "crumbs": [
       "Home"
     ]
@@ -92,8 +92,8 @@
     "objectID": "index.html#get-in-touch",
     "href": "index.html#get-in-touch",
     "title": "Jasper Cain",
-    "section": "Get in touch",
-    "text": "Get in touch\n\nLinkedIn GitHub Email",
+    "section": "",
+    "text": "LinkedIn GitHub Email",
     "crumbs": [
       "Home"
     ]
@@ -102,8 +102,8 @@
     "objectID": "index.html#recent-writing",
     "href": "index.html#recent-writing",
     "title": "Jasper Cain",
-    "section": "Recent Writing",
-    "text": "Recent Writing\nNotes on Tools A short reflection on how the tools we use shape the work we produce.\nOn Systems Thinking Exploring how to think systematically about complex problems.\nThe Case for Slow Reading Why slowing down matters in an age of information overload.\nView all writing →",
+    "section": "",
+    "text": "Notes on Tools A short reflection on how the tools we use shape the work we produce.\nOn Systems Thinking Exploring how to think systematically about complex problems.\nThe Case for Slow Reading Why slowing down matters in an age of information overload.\nView all writing →",
     "crumbs": [
       "Home"
     ]
@@ -112,10 +112,20 @@
     "objectID": "index.html#recent-projects",
     "href": "index.html#recent-projects",
     "title": "Jasper Cain",
-    "section": "Recent Projects",
-    "text": "Recent Projects\nThis Website Building and iterating on a personal site with Quarto.\nData Pipeline Automating data workflows for reliability and scale.\nAnalysis Tool Building tools that make analysis more efficient.\nView all projects →",
+    "section": "",
+    "text": "This Website Building and iterating on a personal site with Quarto.\nData Pipeline Automating data workflows for reliability and scale.\nAnalysis Tool Building tools that make analysis more efficient.\nView all projects →",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This Website\n\n\n\nQuarto\n\nweb\n\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\nMay 1, 2026\n\n\n\n\n\n\n\nAutomated Data Pipeline\n\n\n\nPython\n\ndata engineering\n\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nExploratory Analysis Tool\n\n\n\nPython\n\ndata analysis\n\nviz\n\n\n\nA small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.\n\n\n\n\n\nFeb 10, 2026\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Projects"
     ]
   },
   {
@@ -152,6 +162,48 @@
     "title": "This Website",
     "section": "Deployment",
     "text": "Deployment\nThe site renders to docs/ and GitHub Pages serves from that folder on the main branch.\n\nMore detail coming soon."
+  },
+  {
+    "objectID": "projects/data-pipeline.html",
+    "href": "projects/data-pipeline.html",
+    "title": "Automated Data Pipeline",
+    "section": "",
+    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#overview",
+    "href": "projects/data-pipeline.html#overview",
+    "title": "Automated Data Pipeline",
+    "section": "",
+    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#motivation",
+    "href": "projects/data-pipeline.html#motivation",
+    "title": "Automated Data Pipeline",
+    "section": "Motivation",
+    "text": "Motivation\nI kept needing to do the same data wrangling steps across different projects. This is an attempt to make that reusable."
+  },
+  {
+    "objectID": "projects/data-pipeline.html#tech-stack",
+    "href": "projects/data-pipeline.html#tech-stack",
+    "title": "Automated Data Pipeline",
+    "section": "Tech stack",
+    "text": "Tech stack\n\nLanguage: Python 3.11\nDatabase: DuckDB\nScheduling: Cron / GitHub Actions\nDependencies: httpx, polars, duckdb"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#key-features",
+    "href": "projects/data-pipeline.html#key-features",
+    "title": "Automated Data Pipeline",
+    "section": "Key features",
+    "text": "Key features\n\nIncremental loading — only fetches records newer than the last run\nSchema validation on ingestion\nLightweight CLI interface"
+  },
+  {
+    "objectID": "projects/data-pipeline.html#code",
+    "href": "projects/data-pipeline.html#code",
+    "title": "Automated Data Pipeline",
+    "section": "Code",
+    "text": "Code\n[GitHub repository link — placeholder]\n# Example: loading a single source\nfrom pipeline import load_source\n\nload_source(\"api_name\", since=\"2026-01-01\")\n\nMore detail coming soon."
   },
   {
     "objectID": "projects/analysis-tool.html",
@@ -201,58 +253,6 @@
     "title": "Exploratory Analysis Tool",
     "section": "Code",
     "text": "Code\n[GitHub repository link — placeholder]\n\nMore detail coming soon."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "This Website\n\n\n\nQuarto\n\nweb\n\n\n\nBuilding and iterating on a personal site with Quarto — the decisions, trade-offs, and setup.\n\n\n\n\n\nMay 1, 2026\n\n\n\n\n\n\n\nAutomated Data Pipeline\n\n\n\nPython\n\ndata engineering\n\n\n\nA lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nExploratory Analysis Tool\n\n\n\nPython\n\ndata analysis\n\nviz\n\n\n\nA small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.\n\n\n\n\n\nFeb 10, 2026\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/data-pipeline.html",
-    "href": "projects/data-pipeline.html",
-    "title": "Automated Data Pipeline",
-    "section": "",
-    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
-  },
-  {
-    "objectID": "projects/data-pipeline.html#overview",
-    "href": "projects/data-pipeline.html#overview",
-    "title": "Automated Data Pipeline",
-    "section": "",
-    "text": "This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.\nStatus: Active development"
-  },
-  {
-    "objectID": "projects/data-pipeline.html#motivation",
-    "href": "projects/data-pipeline.html#motivation",
-    "title": "Automated Data Pipeline",
-    "section": "Motivation",
-    "text": "Motivation\nI kept needing to do the same data wrangling steps across different projects. This is an attempt to make that reusable."
-  },
-  {
-    "objectID": "projects/data-pipeline.html#tech-stack",
-    "href": "projects/data-pipeline.html#tech-stack",
-    "title": "Automated Data Pipeline",
-    "section": "Tech stack",
-    "text": "Tech stack\n\nLanguage: Python 3.11\nDatabase: DuckDB\nScheduling: Cron / GitHub Actions\nDependencies: httpx, polars, duckdb"
-  },
-  {
-    "objectID": "projects/data-pipeline.html#key-features",
-    "href": "projects/data-pipeline.html#key-features",
-    "title": "Automated Data Pipeline",
-    "section": "Key features",
-    "text": "Key features\n\nIncremental loading — only fetches records newer than the last run\nSchema validation on ingestion\nLightweight CLI interface"
-  },
-  {
-    "objectID": "projects/data-pipeline.html#code",
-    "href": "projects/data-pipeline.html#code",
-    "title": "Automated Data Pipeline",
-    "section": "Code",
-    "text": "Code\n[GitHub repository link — placeholder]\n# Example: loading a single source\nfrom pipeline import load_source\n\nload_source(\"api_name\", since=\"2026-01-01\")\n\nMore detail coming soon."
   },
   {
     "objectID": "writing/notes-on-tools.html",

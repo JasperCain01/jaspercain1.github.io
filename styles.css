@@ -81,3 +81,33 @@
   margin-right: 1rem;
   font-weight: 500;
 }
+
+/* Sidebar content styling */
+.sidebar-content {
+  position: sticky;
+  top: 2rem;
+  padding-left: 2rem;
+  border-left: 2px solid #e5e7eb;
+}
+
+.sidebar-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.sidebar-content strong {
+  display: block;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.sidebar-content a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.sidebar-content a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "listing": "/writing/index.html",
+    "items": [
+      "/writing/on-systems-thinking.html",
+      "/writing/notes-on-tools.html",
+      "/writing/the-case-for-slow-reading.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/personal-site.html",
+      "/projects/data-pipeline.html",
+      "/projects/analysis-tool.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/writing/index.html",
+      "/writing/on-systems-thinking.html",
+      "/writing/notes-on-tools.html",
+      "/writing/the-case-for-slow-reading.html",
+      "/projects/index.html",
+      "/projects/personal-site.html",
+      "/projects/data-pipeline.html",
+      "/projects/analysis-tool.html"
+    ]
+  }
+]

@@ -3,6 +3,10 @@ title: ""
 toc: false
 ---
 
+:::: {.grid}
+
+::: {.g-col-8}
+
 ## Hi, I'm Jasper
 
 I'm a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.
@@ -42,11 +46,12 @@ Serving the broader NHS analytical community and contributing to discussions abo
 [Email](mailto:jcainsecondemail@gmail.com){.btn .btn-outline-secondary}
 :::
 
----
+:::
 
-::: {.columns}
+::: {.g-col-4}
 
-::: {.column width="60%"}
+::: {.sidebar-content}
+
 ## Recent Writing
 
 **[Notes on Tools](writing/notes-on-tools.qmd)**
@@ -59,9 +64,9 @@ Exploring how to think systematically about complex problems.
 Why slowing down matters in an age of information overload.
 
 [View all writing →](writing/index.qmd)
-:::
 
-::: {.column width="40%"}
+---
+
 ## Recent Projects
 
 **[This Website](projects/personal-site.qmd)**
@@ -74,6 +79,9 @@ Automating data workflows for reliability and scale.
 Building tools that make analysis more efficient.
 
 [View all projects →](projects/index.qmd)
+
 :::
 
 :::
+
+::::

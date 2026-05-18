@@ -2,9 +2,6 @@
   {
     "listing": "/projects/index.html",
     "items": [
-      "/projects/personal-site.html",
-      "/projects/data-pipeline.html",
-      "/projects/analysis-tool.html",
       "/projects/qvdr.html",
       "/projects/statistics-methods-primer.html",
       "/projects/recipe-app.html"

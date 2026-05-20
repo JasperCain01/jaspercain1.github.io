@@ -69,14 +69,14 @@ Why slowing down matters in an age of information overload.
 
 ## Recent Projects
 
-**[qvdr](projects/qvdr.qmd)**
+**[qvdr](projects/index.qmd#qvdr)**
 An R package that reads QVD (QlikView Data) binary files into R tibbles.
 
-**[Statistics Methods Primer](projects/statistics-methods-primer.qmd)**
-A comprehensive guide to statistical methods.
+**[Statistics Methods Primer](projects/index.qmd#statistics-methods-primer)**
+A reference source for NHS analysts without a formal statistical background.
 
-**[Recipe App](projects/recipe-app.qmd)**
-A practical application for recipe management and discovery.
+**[Recipe App](projects/index.qmd#recipe-app)**
+An app for searching recipes based on ingredients and cuisine preferences.
 
 [View all projects →](projects/index.qmd)
 

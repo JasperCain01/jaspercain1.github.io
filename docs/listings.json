@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/projects/index.html",
-    "items": [
-      "/projects/qvdr.html",
-      "/projects/statistics-methods-primer.html",
-      "/projects/recipe-app.html"
-    ]
-  },
-  {
     "listing": "/writing/index.html",
     "items": [
       "/writing/on-systems-thinking.html",

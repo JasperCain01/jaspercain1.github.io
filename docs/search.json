@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "Jasper Cain",
     "section": "",
-    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.\n\n\n\nI’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.\n\n\n\n\nPrincipal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.\n\n\n\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\n\nNotes on Tools A short reflection on how the tools we use shape the work we produce.\nOn Systems Thinking Exploring how to think systematically about complex problems.\nThe Case for Slow Reading Why slowing down matters in an age of information overload.\nView all writing →\n\n\n\n\nqvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A comprehensive guide to statistical methods.\nRecipe App A practical application for recipe management and discovery.\nView all projects →",
+    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.\n\n\n\nI’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.\n\n\n\n\nPrincipal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.\n\n\n\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\n\nNotes on Tools A short reflection on how the tools we use shape the work we produce.\nOn Systems Thinking Exploring how to think systematically about complex problems.\nThe Case for Slow Reading Why slowing down matters in an age of information overload.\nView all writing →\n\n\n\n\nqvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A reference source for NHS analysts without a formal statistical background.\nRecipe App An app for searching recipes based on ingredients and cuisine preferences.\nView all projects →",
     "crumbs": [
       "Home"
     ]
@@ -113,7 +113,7 @@
     "href": "index.html#recent-projects",
     "title": "Jasper Cain",
     "section": "",
-    "text": "qvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A comprehensive guide to statistical methods.\nRecipe App A practical application for recipe management and discovery.\nView all projects →",
+    "text": "qvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A reference source for NHS analysts without a formal statistical background.\nRecipe App An app for searching recipes based on ingredients and cuisine preferences.\nView all projects →",
     "crumbs": [
       "Home"
     ]
@@ -123,7 +123,37 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "qvdr\n\n\nAn R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast…\n\n\n\n\n\n\n\n\n\nStatistics Methods Primer\n\n\nA reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is…\n\n\n\n\n\n\n\n\n\nRecipe App\n\n\nAn app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of…\n\n\n\n\n\nNo matching items",
+    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#qvdr",
+    "href": "projects/index.html#qvdr",
+    "title": "Projects",
+    "section": "",
+    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#statistics-methods-primer",
+    "href": "projects/index.html#statistics-methods-primer",
+    "title": "Projects",
+    "section": "",
+    "text": "Statistics Methods Primer\nA reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#recipe-app",
+    "href": "projects/index.html#recipe-app",
+    "title": "Projects",
+    "section": "",
+    "text": "Recipe App\nAn app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of cuisine you prefer. This was my first app, and it was fully vibe-coded using claude. The process did teach me a lot about how apps are structured, and also gave me an appreciation for how easy it can be to create something that ‘works’, whilst having no understanding of the languages and tools utilised. As such, there are lots of questions to be asked of how much detailed understanding should we require of AI generated outputs before we are willing to use them personally, and how do those requirements differ in a business or public sector environment.\nView on GitHub →",
     "crumbs": [
       "Projects"
     ]

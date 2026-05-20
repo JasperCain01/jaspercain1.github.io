@@ -1,16 +1,33 @@
 ---
 title: "Projects"
-listing:
-  contents: "*.qmd"
-  sort: "date desc"
-  type: grid
-  grid-columns: 1
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  fields: [title, description]
-  page-size: 100
-  image-height: 0px
 page-layout: full
 toc: false
 ---
+
+## {#qvdr}
+
+### qvdr
+
+An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik's proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.
+
+[View on GitHub →](https://github.com/JasperCain01/qvdr){.btn .btn-outline-primary}
+
+---
+
+## {#statistics-methods-primer}
+
+### Statistics Methods Primer
+
+A reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed.
+
+[View on GitHub →](https://github.com/JasperCain01/statistics_methods_primer){.btn .btn-outline-primary}
+
+---
+
+## {#recipe-app}
+
+### Recipe App
+
+An app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of cuisine you prefer. This was my first app, and it was fully vibe-coded using claude. The process did teach me a lot about how apps are structured, and also gave me an appreciation for how easy it can be to create something that 'works', whilst having no understanding of the languages and tools utilised. As such, there are lots of questions to be asked of how much detailed understanding should we require of AI generated outputs before we are willing to use them personally, and how do those requirements differ in a business or public sector environment.
+
+[View on GitHub →](https://github.com/JasperCain01/Recipe-App){.btn .btn-outline-primary}

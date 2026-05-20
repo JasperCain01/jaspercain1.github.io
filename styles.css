@@ -144,3 +144,16 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+/* Override Quarto's description truncation */
+.listing-description {
+  max-height: none !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
+.listing-description p {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}

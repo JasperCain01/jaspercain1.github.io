@@ -119,6 +119,9 @@
   padding: 1.5rem;
   transition: all 0.2s ease;
   background: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .quarto-grid-item:hover {
@@ -138,4 +141,6 @@
   line-height: 1.6;
   margin-bottom: 1rem;
   font-size: 0.95rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }

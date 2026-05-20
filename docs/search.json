@@ -123,7 +123,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "qvdr\n\n\nAn R package that reads QVD (QlikView Data) binary files into R tibbles. QVD is Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval.\n\n\n\n\n\n\n\n\n\nStatistics Methods Primer\n\n\nTO BE UPDATED\n\n\n\n\n\n\n\n\n\nRecipe App\n\n\nTO BE UPDATED\n\n\n\n\n\nNo matching items",
+    "text": "qvdr\n\n\nAn R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast…\n\n\n\n\n\n\n\n\n\nStatistics Methods Primer\n\n\nA reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is…\n\n\n\n\n\n\n\n\n\nRecipe App\n\n\nAn app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of…\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Projects"
     ]

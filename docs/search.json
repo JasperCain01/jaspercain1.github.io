@@ -1,59 +1,155 @@
 [
   {
-    "objectID": "writing/the-case-for-slow-reading.html",
-    "href": "writing/the-case-for-slow-reading.html",
-    "title": "The Case for Slow Reading",
+    "objectID": "writing/piece1_final.html",
+    "href": "writing/piece1_final.html",
+    "title": "What data teams can learn from internal audit",
     "section": "",
-    "text": "This is a placeholder essay. Replace this content with your own writing.\nWe live in an age of abundance. More is published every day than any one person could read in a lifetime. The natural response is to develop speed — to skim, to summarise, to consume."
+    "text": "This piece is addressed to two groups: analysts and analytical leaders who know this problem from the inside, and the senior leaders who commission and receive the work. Both have a part in the response."
   },
   {
-    "objectID": "writing/the-case-for-slow-reading.html#what-you-miss-at-speed",
-    "href": "writing/the-case-for-slow-reading.html#what-you-miss-at-speed",
-    "title": "The Case for Slow Reading",
-    "section": "What you miss at speed",
-    "text": "What you miss at speed\nSlow reading is not just about retention. It is about noticing. When you slow down you begin to see the structure of an argument, the rhythm of a sentence, the choice of a single word."
+    "objectID": "writing/piece1_final.html#the-invisible-decision",
+    "href": "writing/piece1_final.html#the-invisible-decision",
+    "title": "What data teams can learn from internal audit",
+    "section": "The invisible decision",
+    "text": "The invisible decision\n“How many occupied bed days did this hospital have last month?” It sounds like a simple question with a single correct answer, but it isn’t.\nThe analyst providing the figure is making a series of decisions that are entirely invisible to the people receiving the report.\n\nHow is a bed counted as occupied? Is it a snapshot — and if so, at 8am, midnight, or midday?\nIf not a snapshot, does it count anyone in a bed at any point in a 24-hour period? What about patients transferred to a different ward the same day?\nDoes a chair or trolley count as a bed?\nAre critical care and maternity beds included, or only general and acute?\nIf a bed was booked for a patient arriving later, but empty at the snapshot time — is it occupied?\n\nThis is not an obscure edge case. It is one of many such scenarios in which decisions are being made by individual analysts, in isolation, with no reference to a centrally agreed definition. The analyst producing a measure for a specialty manager may be producing a different number to the analyst producing the same measure for the Integrated Board Report. Neither is wrong. Both are a problem.\nThis is an example of the governance gap in NHS analysis teams. It is structural and largely unnoticed, until it causes a problem.\nHowever, as data analysts move from back-office support to being a key part of high impact decisions we can no longer leave it unaddressed."
   },
   {
-    "objectID": "writing/the-case-for-slow-reading.html#a-personal-practice",
-    "href": "writing/the-case-for-slow-reading.html#a-personal-practice",
-    "title": "The Case for Slow Reading",
-    "section": "A personal practice",
-    "text": "A personal practice\nPlaceholder text describing a reading practice or approach.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.\n\nMore coming soon."
+    "objectID": "writing/piece1_final.html#a-profession-that-hasnt-yet-governed-itself",
+    "href": "writing/piece1_final.html#a-profession-that-hasnt-yet-governed-itself",
+    "title": "What data teams can learn from internal audit",
+    "section": "A profession that hasn’t yet governed itself",
+    "text": "A profession that hasn’t yet governed itself\nI want to acknowledge that individual analysts are not at fault. The decisions described above are reasonable ones, made in the absence of organisational standards that should already exist, but don’t. The analyst calculating OBD at midnight is not wrong. They are using their professional judgement to make a choice, and so is every other analyst in every other team doing the same thing differently.\nThe failure belongs to the profession as a collective, and to the data leaders who have not prioritised governance processes which would mitigate this risk. As a professional group we have not taken steps to ensure that the data story at board level is aligned with the story told at every other level of the organisation.\nThis matters because good data analysis is not inert. It drives decisions. The board will set strategic priorities, allocates resources, and receives assurances using the analysis they receive. All three of those functions are compromised when board-level metrics diverge from operational metrics. The reality the analysis is trying to describe can be obscured by the mistrust of data that arises in such confusion.\nHowever, the more dangerous version of this problem is more subtle. It is when the discrepancy between measures has not been noticed and different parts of the organisation are using the same word to mean different things, and nobody has yet noticed.\nProfessions that govern themselves don’t wait to be audited before addressing problems. Finance didn’t develop chartered accountancy because regulators demanded it. As a profession, they recognised that the risks of unverified and unregulated work would impact the reputation of them all. Analytics is at an equivalent moment. The case for professional standards, shared frameworks, and independent accountability is the same case made for finance in the 1800s. That is where the analyst profession should begin. Not because audit scrutiny is undesirable or unnecessary, but because the organisations that will benefit most from it are the ones who have already asked the right questions of themselves."
   },
   {
-    "objectID": "writing/on-systems-thinking.html",
-    "href": "writing/on-systems-thinking.html",
-    "title": "On Systems Thinking",
+    "objectID": "writing/piece1_final.html#how-the-gap-was-allowed-to-grow",
+    "href": "writing/piece1_final.html#how-the-gap-was-allowed-to-grow",
+    "title": "What data teams can learn from internal audit",
+    "section": "How the gap was allowed to grow",
+    "text": "How the gap was allowed to grow\nData analysis has always had these governance gaps. Internal Audits of performance frameworks and board measures rarely wanted to delve into the detail of how the numbers were generated. The focus was on how they were being used and responded to.\nFocusing on the upstream creation of measures was hampered by several factors.\n\nThe complexity of code requiring a specialist with knowledge of both the SQL query and the underlying data structures before being able to identify potential risks.\nAccess to data — even a technically capable auditor would struggle to be granted access to an organisation’s data warehouse within the timescales of a 15 day audit engagement. As internal audit teams shifted to externally contracted services, this was even more difficult, with basic requirements like access credentials and an organisation-issued laptop being practical barriers that couldn’t easily be overcome.\nLack of presence on the risk register — good Internal Audit plans are developed to provide assurance over the significant risks to the organisation. If analytical governance has not been identified by the organisation as a risk, then time will be spent on more obvious areas that carry clearer organisational risk.\n\nThese three factors compounded each other. Analytical infrastructure was too complex for generalist auditors, too inaccessible for contracted ones, and too absent from risk registers for any structured assurance programme to prioritise it. Over time, analyst processes settled into a culture of the single analyst solving problems for their stakeholder alone, with no wider governance ensuring best practices were adopted at a profession-wide level."
+  },
+  {
+    "objectID": "writing/piece1_final.html#when-the-cost-of-getting-it-wrong-increased",
+    "href": "writing/piece1_final.html#when-the-cost-of-getting-it-wrong-increased",
+    "title": "What data teams can learn from internal audit",
+    "section": "When the cost of getting it wrong increased",
+    "text": "When the cost of getting it wrong increased\nOver the past decade, analytics has moved from describing what happened to explaining why, predicting what will happen, and recommending what to do. I have watched this shift from the inside, and it is genuinely encouraging. Analysts are embedded in operational decisions in ways that would have been unusual ten years ago. The NHS should be data-driven, and the appetite for rigorous analysis of mountains of data is something worth welcoming.\nBut the governance cost of an inconsistent metric has risen in proportion to analytical influence. What was a confusing spreadsheet is now a board receiving false assurance. It is resources being diverted from one treatment to another because the analysis identified it was better. The impact of our analysis will only continue to grow.\nAI tools and large language models are beginning to enter analytical workflows, using our existing work as the model for how to use our data infrastructure and provide insight. Organisations that haven’t yet established the basics of sound analytical governance are being asked to oversee something considerably more complex. The foundations matter more, not less, as the tools become more powerful."
+  },
+  {
+    "objectID": "writing/piece1_final.html#what-audit-would-have-asked",
+    "href": "writing/piece1_final.html#what-audit-would-have-asked",
+    "title": "What data teams can learn from internal audit",
+    "section": "What audit would have asked",
+    "text": "What audit would have asked\nIf an Internal Audit were to be invited to review the analytics department, they would structure their thinking around the concepts of Objectives → Risks → Controls. A very simple example would be:\nObjectives — What does the system try to achieve?\n\nReliable and relevant information is provided to those who need it at the right time.\n\nRisks — What are the risks that would impact this objective?\n\nInformation is inaccurate or misunderstood, therefore decisions are based on faulty premises.\n\nControls — What processes are in place to mitigate these risks?\n\nVersion control and transparent definitions ensures a single version of the truth which is understood by all. If an analyst produces information that deviates from the standard definition, the reasons are understood and clearly documented. Any changes to measures are documented and able to be undone if necessary for historical comparisons.\nDefinitions of measures are worked through with relevant stakeholders who will be using the information, not developed in isolation.\nReproducible Analytical Pipelines (standardised, shareable approaches to common analytical tasks, built on version-controlled code) ensure that analysts can produce analysis reliably, without needing to re-invent the wheel each time.\nAnalytical products have named ownership on both the commissioner and analyst side. The responsibilities that come with ownership are clear and handover processes ensure that accountability is never lost to turnover.\n\nIf we are honest with ourselves, most analyst teams don’t implement the controls necessary to provide assurance that the overarching objective of analysis is being met. Furthermore, the absence of any one of these controls tends to accelerate the failure of the others. Without ownership, definitions diverge and without definitions, version control can’t be authoritative."
+  },
+  {
+    "objectID": "writing/piece1_final.html#the-pattern-behind-the-problems",
+    "href": "writing/piece1_final.html#the-pattern-behind-the-problems",
+    "title": "What data teams can learn from internal audit",
+    "section": "The pattern behind the problems",
+    "text": "The pattern behind the problems\nThe gap between the controls above and current processes reveals itself in repeated patterns of practice, and repeated patterns of failure.\nFailure 1: No single source of truth\nToo many reported metrics are undefined. Too many decisions are being made by good analysts in isolation from each other. Every metric that is regularly reported, from Board to Ward, should have a documented, accessible and transparent definition.\nFailure 2: Absence of version control\nVersion control in NHS analytics is not fit for purpose. Many measures, particularly those below Board level, will have no documented definition. There is no record of whether that definition has changed over time, or what impact those changes had. We cannot provide assurance that such measures can distinguish between genuine improvement and methodological drift. This fundamentally limits the worth of what we provide.\nThis is not true in all areas — in some teams there is good adoption of git repositories, which provide a clear history of changes and enable rollback to previous versions of code if needed. But this is localised to individuals and small teams. It is not universally adopted across the NHS analytics profession, or mandated by the organisations we work in.\nFailure 3: Limited accountability and ownership of analytical outputs\nOwnership of analysis is vague and often unwanted. When a manager asks for a new dashboard, they rarely want to be held accountable for all future changes and additions to the dashboard.\nAdditionally, as dashboards and reports age, they outlive their builders. They are inherited by the next generation of managers and analysts without any formal handover, and accountability for the accuracy and relevance of the analysis becomes contested whilst engagement stagnates due a lack of relevance in what is being presented."
+  },
+  {
+    "objectID": "writing/piece1_final.html#what-regular-audit-would-have-changed",
+    "href": "writing/piece1_final.html#what-regular-audit-would-have-changed",
+    "title": "What data teams can learn from internal audit",
+    "section": "What regular audit would have changed",
+    "text": "What regular audit would have changed\nThe audit plan above is hypothetical — but the findings it would have produced are not. And if the plan were to be expanded to other risks, such as timeliness or relevance, more could be easily identified.\nOn definitions.\nAudits would have found limited documented definitions for the metrics an organisation regularly reports, and ambiguous processes for agreeing them.\nThe recommendations would have been straightforward: a register of definitions, signed off by both analytical and operational leads for every metric in regular production, and backed up by validated code that ensured any analyst could reconcile their analysis with what is reported elsewhere in the organisation.\nThis would have multiple benefits. Analysts would make fewer invisible choices in isolation. When stakeholders ask what a number means, there is a documented answer. And when the same question is asked by a Specialty Manager and the operations director, the relationship between their different answers is known and easily explained.\nOn version control.\nAudits would have found no reliable record of what changed in analytical code, when it changed, or why — making it structurally impossible to distinguish genuine performance improvement from methodological drift.\nA metric that improves over time might reflect better care, or it might reflect a redefined denominator. Without version control, the organisation cannot know which it is looking at, and assurance that performance has improved is worth less than it appears.\nThe recommendation would have been mandatory version control for all production analytical code. This is a minimum condition for assurance that analytical outputs can be relied upon over time, and has the added benefit of being a significant productivity gain. When code is centrally maintained, analysts can search what already exists rather than rebuilding from scratch each time. Some teams already work this way, but it is not mandated, and the organisations relying on the outputs are not asking whether it is in place.\nOn ownership.\nAn audit would have found accountability for live analytical products to be informal, frequently contested, and routinely lost when people move on.\nDashboards outlive their builders. Reports are inherited without formal handover. The analyst who knows why a particular definition was chosen leaves, and that knowledge leaves with them. The recommendation would have been named ownership on both sides of the analytical relationship — a commissioner who retains ongoing responsibility for relevance and engagement, and an analyst who retains responsibility for accuracy and maintenance — with explicit handover processes when either party changes role. The change is that the organisation always knows who is responsible for what it is looking at, and that person knows they are responsible.\nTaking the next step.\nThe example findings above are not radical or new. They are common in private businesses, and strict governance structures are already enforced in other domains of the NHS. Financial accountants do not decide individually how to amortise capital expenditure. Clinicians are expected to follow clinical guidelines. The difference for analysts is that we do not need to wait for external regulation to demand change. Analytical professionals are in a position to ask these questions of themselves now and build the structures that give us a firm footing.\nThe template audit plan published alongside this piece is intended as a practical starting point. It presents a set of tests that analytical functions and the senior leaders who commission their work can apply to assess with clarity how mature their governance controls are. It is meant as a tool for self-assessment, to establish what level of assurance the organisation has over its analytical outputs and identify where the gaps are. The right people to work through it are analytical leaders and senior management who commission analytical work, because responsibility for addressing the findings requires both, and because placing analytical governance on the organisation’s risk register, with a named owner and a regular review cycle, is precisely the kind of decision that neither can make alone.\nNow that Analytics is taking a material role in decisions about resources, pathways, and patient care, it needs to build solid governance foundations that most senior staff will assume are already in place.\nThat is what regular internal audit would have changed. Not the quality of individual analysts, which in many cases is high. Not the ambition of the organisations commissioning the work. Internal Audit would have helped to identify the controls and conditions necessary to ensure good analytical work can be relied upon, and assure others of its quality."
+  },
+  {
+    "objectID": "writing/piece1_final.html#companion-document",
+    "href": "writing/piece1_final.html#companion-document",
+    "title": "What data teams can learn from internal audit",
+    "section": "Companion document",
+    "text": "Companion document\nA practical tool to assess your own analytical governance: Analytical Governance — Self-Assessment Tool"
+  },
+  {
+    "objectID": "writing/piece1_audit_plan.html",
+    "href": "writing/piece1_audit_plan.html",
+    "title": "Analytical Governance — Self-Assessment Tool",
     "section": "",
-    "text": "This is a placeholder essay. Replace this content with your own writing.\nSystems thinking is the art of seeing wholes rather than parts — recognising that the world is composed of interacting loops, not linear chains of cause and effect."
+    "text": "This schedule is intended to be completed jointly by an analytical leader and their operational or executive counterpart. It does not constitute an internal audit engagement and does not produce an audit opinion. Its purpose is to surface, honestly, where governance controls over the analytical function are in place, partially in place, or absent.\nThe schedule covers the full vertical of analytical reporting — from the Integrated Performance Report and corporate committees, through divisional committee reporting, down to specialty and ward-level analysis. It is not intended to focus on Board and corporate committee reporting alone. While that reporting is typically the most visible and the most formally governed, the governance risks the schedule addresses are most acute below committee level, where reporting volumes are higher, individual analyst decisions are more numerous, and oversight is less consistent. The user is encouraged to apply each test deliberately across the reporting hierarchy rather than answering only based on trust-level practice.\n\n\nEach test is tagged as either FOUNDATIONAL or CONFIRMATORY. Foundational tests establish whether the control exists at all. Confirmatory tests assess how well it is operating. The schedule is most useful if foundational tests are completed first across all risks before confirmatory tests are attempted — there is limited value in assessing the quality of operation of a control that is not yet in place.\n\n\n\nSeveral tests refer to taking a sample of measures or products. The schedule does not prescribe a specific sample size. A reasonable starting point for a trust-wide assessment would be two metrics per clinical division, drawn from different specialties, focusing on measures that are used to inform operational, quality, or performance decisions. For a divisional-level assessment, two to three metrics per specialty within the division. For a smaller analytical function or a more narrowly scoped assessment, the sample can be proportionally smaller. The point of sampling here is not statistical inference but informed judgement — the sample should be large enough to be representative of the practices the assessor is trying to understand, and no larger than is necessary to make that judgement honestly.\n\n\n\nThe risks below are framed in terms of decision-making and organisational assurance. They have implications for clinical safety, but those implications are most often expressed through the larger governance mechanisms by which the organisation oversees patient safety — audit, mortality review, incident investigation, board-level assurance — rather than through individual decisions taken at the point of care. Analytical outputs that are inaccurate, inconsistent, or ungoverned weaken those oversight mechanisms; the schedule is therefore framed at that level, neither understating the connection to safety nor overstating the immediacy of the clinical risk."
   },
   {
-    "objectID": "writing/on-systems-thinking.html#the-feedback-loop-problem",
-    "href": "writing/on-systems-thinking.html#the-feedback-loop-problem",
-    "title": "On Systems Thinking",
-    "section": "The feedback loop problem",
-    "text": "The feedback loop problem\nMost of us are trained to think in straight lines. A causes B, B causes C. But in practice, C loops back and changes A. The economy, the climate, a software codebase, a team — all of these are systems where outputs become inputs."
+    "objectID": "writing/piece1_audit_plan.html#scope-and-how-to-use-this-document",
+    "href": "writing/piece1_audit_plan.html#scope-and-how-to-use-this-document",
+    "title": "Analytical Governance — Self-Assessment Tool",
+    "section": "",
+    "text": "This schedule is intended to be completed jointly by an analytical leader and their operational or executive counterpart. It does not constitute an internal audit engagement and does not produce an audit opinion. Its purpose is to surface, honestly, where governance controls over the analytical function are in place, partially in place, or absent.\nThe schedule covers the full vertical of analytical reporting — from the Integrated Performance Report and corporate committees, through divisional committee reporting, down to specialty and ward-level analysis. It is not intended to focus on Board and corporate committee reporting alone. While that reporting is typically the most visible and the most formally governed, the governance risks the schedule addresses are most acute below committee level, where reporting volumes are higher, individual analyst decisions are more numerous, and oversight is less consistent. The user is encouraged to apply each test deliberately across the reporting hierarchy rather than answering only based on trust-level practice.\n\n\nEach test is tagged as either FOUNDATIONAL or CONFIRMATORY. Foundational tests establish whether the control exists at all. Confirmatory tests assess how well it is operating. The schedule is most useful if foundational tests are completed first across all risks before confirmatory tests are attempted — there is limited value in assessing the quality of operation of a control that is not yet in place.\n\n\n\nSeveral tests refer to taking a sample of measures or products. The schedule does not prescribe a specific sample size. A reasonable starting point for a trust-wide assessment would be two metrics per clinical division, drawn from different specialties, focusing on measures that are used to inform operational, quality, or performance decisions. For a divisional-level assessment, two to three metrics per specialty within the division. For a smaller analytical function or a more narrowly scoped assessment, the sample can be proportionally smaller. The point of sampling here is not statistical inference but informed judgement — the sample should be large enough to be representative of the practices the assessor is trying to understand, and no larger than is necessary to make that judgement honestly.\n\n\n\nThe risks below are framed in terms of decision-making and organisational assurance. They have implications for clinical safety, but those implications are most often expressed through the larger governance mechanisms by which the organisation oversees patient safety — audit, mortality review, incident investigation, board-level assurance — rather than through individual decisions taken at the point of care. Analytical outputs that are inaccurate, inconsistent, or ungoverned weaken those oversight mechanisms; the schedule is therefore framed at that level, neither understating the connection to safety nor overstating the immediacy of the clinical risk."
   },
   {
-    "objectID": "writing/on-systems-thinking.html#why-this-matters",
-    "href": "writing/on-systems-thinking.html#why-this-matters",
-    "title": "On Systems Thinking",
-    "section": "Why this matters",
-    "text": "Why this matters\nWhen you try to fix a system problem by pushing on one variable without understanding the loops, you often make things worse. The drug that suppresses symptoms can mask the underlying cause. The policy that targets one metric can distort another."
+    "objectID": "writing/piece1_audit_plan.html#audit-test-schedule",
+    "href": "writing/piece1_audit_plan.html#audit-test-schedule",
+    "title": "Analytical Governance — Self-Assessment Tool",
+    "section": "Audit test schedule",
+    "text": "Audit test schedule\nObjective 1: Reliable and relevant information is provided to those who need it at the right time.\n\n\nRisk 1.1\nIf analytical outputs contain calculation errors, methodological drift, or other defects, then decisions may be taken based on unreliable information.\n\nControl 1.1.1\nVersion control is in place for production analytical code, with a clear commit history. The most recent authoritative version of each measure’s code is identifiable and accessible to any analyst who might need to use or check it.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.1.1.1\nFOUNDATIONAL\nConfirm whether a version control system (e.g. Git) is used for analytical code that produces regularly reported measures. Document the proportion of regularly reported measures whose source code is held in version control versus held only in individual analyst files, or restricted network locations.\n\n\n1.1.1.2\nCONFIRMATORY\nFor a sample of measures, ask an analyst to demonstrate that the version currently producing the reported figure is the same as the most recent committed version in the repository, and that the commit history is meaningful.\n\n\n\n\n\nControl 1.1.2\nCalculation logic for measures used in significant operational, performance, or safety reporting is reviewed by a second analyst before the measure enters regular production, and after any material change. When errors are subsequently identified, they are investigated and corrected, with affected stakeholders informed.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.1.2.1\nFOUNDATIONAL\nIdentify whether a peer-review process exists for analytical code. If it does, document where the process is held, what it requires, and whether it is known to analysts across the trust including those embedded in clinical divisions.\n\n\n1.1.2.2\nCONFIRMATORY\nFor a sample of measures introduced or materially changed in the past 12 months, ask the relevant analytical lead to evidence that the calculation logic was reviewed by a second analyst before being used in regular reporting.\n\n\n1.1.2.3\nCONFIRMATORY\nIdentify any errors that have been discovered in regularly reported measures in the past 24 months. For each, confirm that the cause was understood, the output corrected, and affected stakeholders informed — including stakeholders below trust level who may have been using the same metric.\n\n\n\n\n\n\n\nRisk 1.2\nIf the same metric is calculated differently in different parts of the organisation, then management decisions may be made that conflict and enact actions that work at cross-purposes.\n\nControl 1.2.1\nA definition register is maintained for regularly reported metrics, recording what each metric includes and excludes and how it is calculated. The register is accessible to all analysts and to operational and executive stakeholders.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.2.1.1\nFOUNDATIONAL\nConfirm whether a definition register exists. Document its location, who is responsible for maintaining it, what scope it covers (e.g. trust-level only, or also divisional/specialty metrics), and whether it is accessible to all analysts and stakeholders.\n\n\n1.2.1.2\nCONFIRMATORY\nSelect a sample of metrics from the register. Ask an analyst to confirm that the documented definition matches the calculation currently being used to produce the reported figure.\n\n\n1.2.1.3\nCONFIRMATORY\nAsk a sample of operational managers — including those at divisional and specialty level — what they understand by each of two named metrics they use regularly. Compare their answers to the documented definition. Note any divergence between operational understanding and the definition in use.\n\n\n\n\n\nControl 1.2.2\nDefinitions are agreed with both analytical and operational leads before a metric enters regular reporting, with sign-off documented. This applies equally to trust-wide measures and to measures developed within divisions or specialties.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.2.2.1\nFOUNDATIONAL\nIdentify whether a process exists requiring sign-off from both analytical and operational leads before a definition is committed to regular reporting. Document where sign-off is recorded and whether the process applies to divisional and specialty metrics, not only trust-level metrics.\n\n\n1.2.2.2\nCONFIRMATORY\nFor a sample of metrics that entered regular reporting in the past 24 months — drawn from trust, divisional, and specialty levels — confirm that documented sign-off exists from both an analytical and an operational lead.\n\n\n\n\n\nControl 1.2.3\nWhere the same metric is legitimately calculated differently at different levels of the organisation, the relationship between the versions is documented and known to both analytical and operational leads.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.2.3.1\nFOUNDATIONAL\nIdentify whether documentation exists describing the relationship between different versions of metrics that are reported at multiple levels — for example, the relationship between trust-level occupied bed days reported to the board, divisional bed occupancy reported to a divisional committee, and ward-level occupancy used operationally.\n\n\n1.2.3.2\nCONFIRMATORY\nSelect a sample of metrics reported at more than one level of the organisation. Ask an analyst to demonstrate that the relationship between the different versions can be explained and, where possible, reconciled using documented code or methodology.\n\n\n\n\n\n\n\nRisk 1.3\nIf analytical products have insufficient oversight, then the information used to make decisions cannot be relied upon.\n\nControl 1.3.1\nEvery live analytical product has a named owner on the analytical side, responsible for accuracy and maintenance, and a named owner on the commissioner side, responsible for ongoing relevance.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.3.1.1\nFOUNDATIONAL\nProduce a list of live analytical products across all levels of the organisation. For each, confirm that an analytical owner and a commissioner owner are named and current.\n\n\n1.3.1.2\nCONFIRMATORY\nFor a sample of products, confirm that the named owners are aware of and accept their responsibilities, and that the responsibilities themselves are documented — not merely the names.\n\n\n\n\n\nControl 1.3.2\nLive products are subject to periodic review with authority to decommission products that no longer serve their original purpose.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.3.2.1\nFOUNDATIONAL\nIdentify whether a documented review process exists. Document its frequency, who undertakes it, and what authority exists to decommission products that fail review.\n\n\n1.3.2.2\nCONFIRMATORY\nFor a sample of products in regular production, identify when each was last formally reviewed for continued relevance. Document any that have not been reviewed within the last 12 months.\n\n\n1.3.2.3\nCONFIRMATORY\nIdentify any products that have been formally decommissioned in the past 24 months. If none have been, consider whether this reflects that all products are still genuinely needed, or that the review process is not producing meaningful action.\n\n\n\n\n\nControl 1.3.3\nFormal handover processes are in place, triggered when either the analytical owner or the commissioner changes role, ensuring that institutional knowledge of the product is transferred. This is particularly important for products held at specialty level, where analytical knowledge often resides in one or two individuals.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.3.3.1\nFOUNDATIONAL\nIdentify whether a documented handover process exists. Document what it requires and who is responsible for ensuring it is followed.\n\n\n1.3.3.2\nCONFIRMATORY\nIdentify a sample of products where the analytical or commissioner owner has changed in the past 24 months. For each, confirm that a formal handover took place and that the new owner can articulate why the product exists and how it works.\n\n\n1.3.3.3\nCONFIRMATORY\nAssess whether there are any products where an original owner has left and no formal handover occurred. Document the knowledge gap this creates and whether it is recoverable.\n\n\n\n\n\nControl 1.3.4\nAnalytical governance is on the organisation’s risk register, with a named owner, a defined risk description, and a regular review cycle aligned with other organisational risks. This ensures that the controls above remain subject to ongoing scrutiny rather than being assessed once and left.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.3.4.1\nFOUNDATIONAL\nConfirm whether analytical governance appears on the organisation’s risk register. If it does, identify how the risk is described, who owns it, and how frequently it is reviewed.\n\n\n1.3.4.2\nCONFIRMATORY\nIf analytical governance is on the risk register, assess whether the most recent review produced meaningful action or was a routine roll-forward. If it is not on the register, identify who would need to agree to put it there and what evidence they would need to support that decision.\n\n\n1.3.4.3\nCONFIRMATORY\nConfirm whether the audit committee has received any report on the adequacy of analytical governance arrangements in the past 24 months. If not, identify whether analytical outputs feature in any other assurance reporting received by the audit committee — for example, as a control within other risk areas.\n\n\n\n\nMethodological note: This schedule is informed by the Global Internal Audit Standards (Institute of Internal Auditors, 2024) and the Application Note: Global Internal Audit Standards in the UK Public Sector (Internal Audit Standards Advisory Board, December 2024, effective 1 April 2025). The Objectives → Risks → Controls → Tests methodology used here derives from the risk-based audit planning approach described in Standard 9.4 (Internal Audit Plan) of the Global Standards. The schedule is a management self-assessment tool, not an internal audit engagement, and does not produce an audit opinion."
   },
   {
-    "objectID": "writing/on-systems-thinking.html#placeholder-section",
-    "href": "writing/on-systems-thinking.html#placeholder-section",
-    "title": "On Systems Thinking",
-    "section": "Placeholder section",
-    "text": "Placeholder section\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.\n\nMore coming soon."
+    "objectID": "projects/recipe-app.html",
+    "href": "projects/recipe-app.html",
+    "title": "Recipe App",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
+    "objectID": "projects/statistics-methods-primer.html",
+    "href": "projects/statistics-methods-primer.html",
+    "title": "Statistics Methods Primer",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
+    "objectID": "projects/qvdr.html",
+    "href": "projects/qvdr.html",
+    "title": "qvdr",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#qvdr",
+    "href": "projects/index.html#qvdr",
+    "title": "Projects",
+    "section": "",
+    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#statistics-methods-primer",
+    "href": "projects/index.html#statistics-methods-primer",
+    "title": "Projects",
+    "section": "",
+    "text": "Statistics Methods Primer\nA reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#recipe-app",
+    "href": "projects/index.html#recipe-app",
+    "title": "Projects",
+    "section": "",
+    "text": "Recipe App\nAn app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of cuisine you prefer. This was my first app, and it was fully vibe-coded using claude. The process did teach me a lot about how apps are structured, and also gave me an appreciation for how easy it can be to create something that ‘works’, whilst having no understanding of the languages and tools utilised. As such, there are lots of questions to be asked of how much detailed understanding should we require of AI generated outputs before we are willing to use them personally, and how do those requirements differ in a business or public sector environment.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Jasper Cain",
     "section": "",
-    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.\n\n\n\nI’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.\n\n\n\n\nPrincipal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.\n\n\n\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\n\nNotes on Tools A short reflection on how the tools we use shape the work we produce.\nOn Systems Thinking Exploring how to think systematically about complex problems.\nThe Case for Slow Reading Why slowing down matters in an age of information overload.\nView all writing →\n\n\n\n\nqvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A reference source for NHS analysts without a formal statistical background.\nRecipe App An app for searching recipes based on ingredients and cuisine preferences.\nView all projects →",
+    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.\n\n\n\nI’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.\n\n\n\n\nPrincipal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.\n\n\n\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\n\nWhat data teams can learn from internal audit NHS Analytics Writing Series — exploring governance and analytical rigour.\nAnalytical Governance — Self-Assessment Tool A practical assessment tool for evaluating analytical governance controls.\nView all writing →\n\n\n\n\nqvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A reference source for NHS analysts without a formal statistical background.\nRecipe App An app for searching recipes based on ingredients and cuisine preferences.\nView all projects →",
     "crumbs": [
       "Home"
     ]
@@ -103,7 +199,7 @@
     "href": "index.html#recent-writing",
     "title": "Jasper Cain",
     "section": "",
-    "text": "Notes on Tools A short reflection on how the tools we use shape the work we produce.\nOn Systems Thinking Exploring how to think systematically about complex problems.\nThe Case for Slow Reading Why slowing down matters in an age of information overload.\nView all writing →",
+    "text": "What data teams can learn from internal audit NHS Analytics Writing Series — exploring governance and analytical rigour.\nAnalytical Governance — Self-Assessment Tool A practical assessment tool for evaluating analytical governance controls.\nView all writing →",
     "crumbs": [
       "Home"
     ]
@@ -119,93 +215,11 @@
     ]
   },
   {
-    "objectID": "projects/recipe-app.html",
-    "href": "projects/recipe-app.html",
-    "title": "Recipe App",
-    "section": "",
-    "text": "View on GitHub →"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#qvdr",
-    "href": "projects/index.html#qvdr",
-    "title": "Projects",
-    "section": "",
-    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#statistics-methods-primer",
-    "href": "projects/index.html#statistics-methods-primer",
-    "title": "Projects",
-    "section": "",
-    "text": "Statistics Methods Primer\nA reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed.\nView on GitHub →",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#recipe-app",
-    "href": "projects/index.html#recipe-app",
-    "title": "Projects",
-    "section": "",
-    "text": "Recipe App\nAn app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of cuisine you prefer. This was my first app, and it was fully vibe-coded using claude. The process did teach me a lot about how apps are structured, and also gave me an appreciation for how easy it can be to create something that ‘works’, whilst having no understanding of the languages and tools utilised. As such, there are lots of questions to be asked of how much detailed understanding should we require of AI generated outputs before we are willing to use them personally, and how do those requirements differ in a business or public sector environment.\nView on GitHub →",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/qvdr.html",
-    "href": "projects/qvdr.html",
-    "title": "qvdr",
-    "section": "",
-    "text": "View on GitHub →"
-  },
-  {
-    "objectID": "projects/statistics-methods-primer.html",
-    "href": "projects/statistics-methods-primer.html",
-    "title": "Statistics Methods Primer",
-    "section": "",
-    "text": "View on GitHub →"
-  },
-  {
-    "objectID": "writing/notes-on-tools.html",
-    "href": "writing/notes-on-tools.html",
-    "title": "Notes on Tools",
-    "section": "",
-    "text": "This is a placeholder essay. Replace this content with your own writing.\nEvery craftsperson has opinions about their tools. Writers argue about text editors; photographers argue about cameras; developers argue about languages and frameworks."
-  },
-  {
-    "objectID": "writing/notes-on-tools.html#the-tool-shapes-the-work",
-    "href": "writing/notes-on-tools.html#the-tool-shapes-the-work",
-    "title": "Notes on Tools",
-    "section": "The tool shapes the work",
-    "text": "The tool shapes the work\nThere’s a version of this argument that says “a good craftsperson doesn’t blame their tools.” That’s true. But there’s a complementary truth: the affordances of a tool quietly shape what you make with it.\nWriting in Markdown encourages structure. Writing in a rich text editor encourages flowing prose. Neither is better — they’re different."
-  },
-  {
-    "objectID": "writing/notes-on-tools.html#placeholder-section",
-    "href": "writing/notes-on-tools.html#placeholder-section",
-    "title": "Notes on Tools",
-    "section": "Placeholder section",
-    "text": "Placeholder section\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nMore coming soon."
-  },
-  {
     "objectID": "writing/index.html",
     "href": "writing/index.html",
     "title": "Writing",
     "section": "",
-    "text": "On Systems Thinking\n\n\n\nideas\n\nessay\n\n\n\nWhy understanding feedback loops changes the way you see almost everything.\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\n\nNotes on Tools\n\n\n\ncraft\n\nshort\n\n\n\nA short reflection on how the tools we use shape the work we produce.\n\n\n\n\n\nMar 8, 2026\n\n\n\n\n\n\n\nThe Case for Slow Reading\n\n\n\nideas\n\nculture\n\n\n\nIn an era of infinite content, there is something quietly radical about reading one thing carefully.\n\n\n\n\n\nJan 22, 2026\n\n\n\n\n\nNo matching items",
+    "text": "What data teams can learn from internal audit\n\n\nExploring how analytical teams can apply internal audit principles to strengthen governance and build trust in their outputs.\n\n\n\n\n\nMay 21, 2026\n\n\n\n\n\n\n\nAnalytical Governance — Self-Assessment Tool\n\n\nA practical assessment tool for evaluating the governance, quality controls, and ownership arrangements of analytical products.\n\n\n\n\n\nMay 21, 2026\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Writing"
     ]

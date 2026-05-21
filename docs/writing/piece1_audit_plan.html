@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jasper Cain">
+<meta name="description" content="A practical assessment tool for evaluating the governance, quality controls, and ownership arrangements of analytical products.">
 
-<title>Writing – Jasper Cain</title>
+<title>Analytical Governance — Self-Assessment Tool – Jasper Cain</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +35,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -72,65 +72,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<style>html{ scroll-behavior: smooth; }</style>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -144,7 +87,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../writing/index.html">Writing</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Jasper Cain
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -172,7 +117,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../writing/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../writing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing</span></a>
   </div>
 </li>
@@ -188,20 +133,46 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In this document</h2>
+   
+  <ul class="collapse">
+  <li><a href="#scope-and-how-to-use-this-document" id="toc-scope-and-how-to-use-this-document" class="nav-link active" data-scroll-target="#scope-and-how-to-use-this-document">Scope and how to use this document</a></li>
+  <li><a href="#audit-test-schedule" id="toc-audit-test-schedule" class="nav-link" data-scroll-target="#audit-test-schedule">Audit test schedule</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="piece1_audit_plan.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Writing</h1>
+<h1 class="title">Analytical Governance — Self-Assessment Tool</h1>
+<p class="subtitle lead">Companion to: What data teams can learn from internal audit</p>
 </div>
 
+<div>
+  <div class="description">
+    A practical assessment tool for evaluating the governance, quality controls, and ownership arrangements of analytical products.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-body">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jasper Cain </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -211,49 +182,343 @@ window.Quarto = {
 </header>
 
 
+<section id="scope-and-how-to-use-this-document" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-how-to-use-this-document">Scope and how to use this document</h2>
+<p>This schedule is intended to be completed jointly by an analytical leader and their operational or executive counterpart. It does not constitute an internal audit engagement and does not produce an audit opinion. Its purpose is to surface, honestly, where governance controls over the analytical function are in place, partially in place, or absent.</p>
+<p>The schedule covers the full vertical of analytical reporting — from the Integrated Performance Report and corporate committees, through divisional committee reporting, down to specialty and ward-level analysis. It is <strong>not</strong> intended to focus on Board and corporate committee reporting alone. While that reporting is typically the most visible and the most formally governed, the governance risks the schedule addresses are most acute below committee level, where reporting volumes are higher, individual analyst decisions are more numerous, and oversight is less consistent. The user is encouraged to apply each test deliberately across the reporting hierarchy rather than answering only based on trust-level practice.</p>
+<section id="foundational-and-confirmatory-tests" class="level3">
+<h3 class="anchored" data-anchor-id="foundational-and-confirmatory-tests"><em>Foundational and confirmatory tests</em></h3>
+<p>Each test is tagged as either <strong>FOUNDATIONAL</strong> or <strong>CONFIRMATORY</strong>. Foundational tests establish whether the control exists at all. Confirmatory tests assess how well it is operating. The schedule is most useful if foundational tests are completed first across all risks before confirmatory tests are attempted — there is limited value in assessing the quality of operation of a control that is not yet in place.</p>
+</section>
+<section id="a-note-on-sampling" class="level3">
+<h3 class="anchored" data-anchor-id="a-note-on-sampling"><em>A note on sampling</em></h3>
+<p>Several tests refer to taking a sample of measures or products. The schedule does not prescribe a specific sample size. A reasonable starting point for a trust-wide assessment would be two metrics per clinical division, drawn from different specialties, focusing on measures that are used to inform operational, quality, or performance decisions. For a divisional-level assessment, two to three metrics per specialty within the division. For a smaller analytical function or a more narrowly scoped assessment, the sample can be proportionally smaller. The point of sampling here is not statistical inference but informed judgement — the sample should be large enough to be representative of the practices the assessor is trying to understand, and no larger than is necessary to make that judgement honestly.</p>
+</section>
+<section id="on-the-nature-of-the-risks-identified" class="level3">
+<h3 class="anchored" data-anchor-id="on-the-nature-of-the-risks-identified"><em>On the nature of the risks identified</em></h3>
+<p>The risks below are framed in terms of decision-making and organisational assurance. They have implications for clinical safety, but those implications are most often expressed through the larger governance mechanisms by which the organisation oversees patient safety — audit, mortality review, incident investigation, board-level assurance — rather than through individual decisions taken at the point of care. Analytical outputs that are inaccurate, inconsistent, or ungoverned weaken those oversight mechanisms; the schedule is therefore framed at that level, neither understating the connection to safety nor overstating the immediacy of the clinical risk.</p>
+</section>
+</section>
+<section id="audit-test-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="audit-test-schedule">Audit test schedule</h2>
+<p><strong>Objective 1:</strong> Reliable and relevant information is provided to those who need it at the right time.</p>
+<hr>
+<section id="risk-1.1" class="level3">
+<h3 class="anchored" data-anchor-id="risk-1.1">Risk 1.1</h3>
+<p><em>If analytical outputs contain calculation errors, methodological drift, or other defects, then decisions may be taken based on unreliable information.</em></p>
+<section id="control-1.1.1" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.1.1">Control 1.1.1</h4>
+<p>Version control is in place for production analytical code, with a clear commit history. The most recent authoritative version of each measure’s code is identifiable and accessible to any analyst who might need to use or check it.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1.1.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Confirm whether a version control system (e.g.&nbsp;Git) is used for analytical code that produces regularly reported measures. Document the proportion of regularly reported measures whose source code is held in version control versus held only in individual analyst files, or restricted network locations.</td>
+</tr>
+<tr class="even">
+<td>1.1.1.2</td>
+<td>CONFIRMATORY</td>
+<td>For a sample of measures, ask an analyst to demonstrate that the version currently producing the reported figure is the same as the most recent committed version in the repository, and that the commit history is meaningful.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="control-1.1.2" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.1.2">Control 1.1.2</h4>
+<p>Calculation logic for measures used in significant operational, performance, or safety reporting is reviewed by a second analyst before the measure enters regular production, and after any material change. When errors are subsequently identified, they are investigated and corrected, with affected stakeholders informed.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1.2.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Identify whether a peer-review process exists for analytical code. If it does, document where the process is held, what it requires, and whether it is known to analysts across the trust including those embedded in clinical divisions.</td>
+</tr>
+<tr class="even">
+<td>1.1.2.2</td>
+<td>CONFIRMATORY</td>
+<td>For a sample of measures introduced or materially changed in the past 12 months, ask the relevant analytical lead to evidence that the calculation logic was reviewed by a second analyst before being used in regular reporting.</td>
+</tr>
+<tr class="odd">
+<td>1.1.2.3</td>
+<td>CONFIRMATORY</td>
+<td>Identify any errors that have been discovered in regularly reported measures in the past 24 months. For each, confirm that the cause was understood, the output corrected, and affected stakeholders informed — including stakeholders below trust level who may have been using the same metric.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="risk-1.2" class="level3">
+<h3 class="anchored" data-anchor-id="risk-1.2">Risk 1.2</h3>
+<p><em>If the same metric is calculated differently in different parts of the organisation, then management decisions may be made that conflict and enact actions that work at cross-purposes.</em></p>
+<section id="control-1.2.1" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.2.1">Control 1.2.1</h4>
+<p>A definition register is maintained for regularly reported metrics, recording what each metric includes and excludes and how it is calculated. The register is accessible to all analysts and to operational and executive stakeholders.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.2.1.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Confirm whether a definition register exists. Document its location, who is responsible for maintaining it, what scope it covers (e.g.&nbsp;trust-level only, or also divisional/specialty metrics), and whether it is accessible to all analysts and stakeholders.</td>
+</tr>
+<tr class="even">
+<td>1.2.1.2</td>
+<td>CONFIRMATORY</td>
+<td>Select a sample of metrics from the register. Ask an analyst to confirm that the documented definition matches the calculation currently being used to produce the reported figure.</td>
+</tr>
+<tr class="odd">
+<td>1.2.1.3</td>
+<td>CONFIRMATORY</td>
+<td>Ask a sample of operational managers — including those at divisional and specialty level — what they understand by each of two named metrics they use regularly. Compare their answers to the documented definition. Note any divergence between operational understanding and the definition in use.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="control-1.2.2" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.2.2">Control 1.2.2</h4>
+<p>Definitions are agreed with both analytical and operational leads before a metric enters regular reporting, with sign-off documented. This applies equally to trust-wide measures and to measures developed within divisions or specialties.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.2.2.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Identify whether a process exists requiring sign-off from both analytical and operational leads before a definition is committed to regular reporting. Document where sign-off is recorded and whether the process applies to divisional and specialty metrics, not only trust-level metrics.</td>
+</tr>
+<tr class="even">
+<td>1.2.2.2</td>
+<td>CONFIRMATORY</td>
+<td>For a sample of metrics that entered regular reporting in the past 24 months — drawn from trust, divisional, and specialty levels — confirm that documented sign-off exists from both an analytical and an operational lead.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="control-1.2.3" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.2.3">Control 1.2.3</h4>
+<p>Where the same metric is legitimately calculated differently at different levels of the organisation, the relationship between the versions is documented and known to both analytical and operational leads.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.2.3.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Identify whether documentation exists describing the relationship between different versions of metrics that are reported at multiple levels — for example, the relationship between trust-level occupied bed days reported to the board, divisional bed occupancy reported to a divisional committee, and ward-level occupancy used operationally.</td>
+</tr>
+<tr class="even">
+<td>1.2.3.2</td>
+<td>CONFIRMATORY</td>
+<td>Select a sample of metrics reported at more than one level of the organisation. Ask an analyst to demonstrate that the relationship between the different versions can be explained and, where possible, reconciled using documented code or methodology.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="risk-1.3" class="level3">
+<h3 class="anchored" data-anchor-id="risk-1.3">Risk 1.3</h3>
+<p><em>If analytical products have insufficient oversight, then the information used to make decisions cannot be relied upon.</em></p>
+<section id="control-1.3.1" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.3.1">Control 1.3.1</h4>
+<p>Every live analytical product has a named owner on the analytical side, responsible for accuracy and maintenance, and a named owner on the commissioner side, responsible for ongoing relevance.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.3.1.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Produce a list of live analytical products across all levels of the organisation. For each, confirm that an analytical owner and a commissioner owner are named and current.</td>
+</tr>
+<tr class="even">
+<td>1.3.1.2</td>
+<td>CONFIRMATORY</td>
+<td>For a sample of products, confirm that the named owners are aware of and accept their responsibilities, and that the responsibilities themselves are documented — not merely the names.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="control-1.3.2" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.3.2">Control 1.3.2</h4>
+<p>Live products are subject to periodic review with authority to decommission products that no longer serve their original purpose.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.3.2.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Identify whether a documented review process exists. Document its frequency, who undertakes it, and what authority exists to decommission products that fail review.</td>
+</tr>
+<tr class="even">
+<td>1.3.2.2</td>
+<td>CONFIRMATORY</td>
+<td>For a sample of products in regular production, identify when each was last formally reviewed for continued relevance. Document any that have not been reviewed within the last 12 months.</td>
+</tr>
+<tr class="odd">
+<td>1.3.2.3</td>
+<td>CONFIRMATORY</td>
+<td>Identify any products that have been formally decommissioned in the past 24 months. If none have been, consider whether this reflects that all products are still genuinely needed, or that the review process is not producing meaningful action.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="control-1.3.3" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.3.3">Control 1.3.3</h4>
+<p>Formal handover processes are in place, triggered when either the analytical owner or the commissioner changes role, ensuring that institutional knowledge of the product is transferred. This is particularly important for products held at specialty level, where analytical knowledge often resides in one or two individuals.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.3.3.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Identify whether a documented handover process exists. Document what it requires and who is responsible for ensuring it is followed.</td>
+</tr>
+<tr class="even">
+<td>1.3.3.2</td>
+<td>CONFIRMATORY</td>
+<td>Identify a sample of products where the analytical or commissioner owner has changed in the past 24 months. For each, confirm that a formal handover took place and that the new owner can articulate why the product exists and how it works.</td>
+</tr>
+<tr class="odd">
+<td>1.3.3.3</td>
+<td>CONFIRMATORY</td>
+<td>Assess whether there are any products where an original owner has left and no formal handover occurred. Document the knowledge gap this creates and whether it is recoverable.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="control-1.3.4" class="level4">
+<h4 class="anchored" data-anchor-id="control-1.3.4">Control 1.3.4</h4>
+<p>Analytical governance is on the organisation’s risk register, with a named owner, a defined risk description, and a regular review cycle aligned with other organisational risks. This ensures that the controls above remain subject to ongoing scrutiny rather than being assessed once and left.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ref</th>
+<th>Type</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.3.4.1</td>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Confirm whether analytical governance appears on the organisation’s risk register. If it does, identify how the risk is described, who owns it, and how frequently it is reviewed.</td>
+</tr>
+<tr class="even">
+<td>1.3.4.2</td>
+<td>CONFIRMATORY</td>
+<td>If analytical governance is on the risk register, assess whether the most recent review produced meaningful action or was a routine roll-forward. If it is not on the register, identify who would need to agree to put it there and what evidence they would need to support that decision.</td>
+</tr>
+<tr class="odd">
+<td>1.3.4.3</td>
+<td>CONFIRMATORY</td>
+<td>Confirm whether the audit committee has received any report on the adequacy of analytical governance arrangements in the past 24 months. If not, identify whether analytical outputs feature in any other assurance reporting received by the audit committee — for example, as a control within other risk areas.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>Methodological note: This schedule is informed by the Global Internal Audit Standards (Institute of Internal Auditors, 2024) and the Application Note: Global Internal Audit Standards in the UK Public Sector (Internal Audit Standards Advisory Board, December 2024, effective 1 April 2025). The Objectives → Risks → Controls → Tests methodology used here derives from the risk-based audit planning approach described in Standard 9.4 (Internal Audit Plan) of the Global Standards. The schedule is a management self-assessment tool, not an internal audit engagement, and does not produce an audit opinion.</em></p>
 
 
+</section>
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1779355928000" data-listing-file-modified-sort="1779355928563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2250">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../writing/piece1_final.html" class="no-external">What data teams can learn from internal audit</a>
-</h3>
-<div class="delink listing-description"><a href="../writing/piece1_final.html" class="no-external">
-<p>Exploring how analytical teams can apply internal audit principles to strengthen governance and build trust in their outputs.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../writing/piece1_final.html" class="no-external">
-<div class="listing-date">
-May 21, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1779355921000" data-listing-file-modified-sort="1779355921778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1955">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../writing/piece1_audit_plan.html" class="no-external">Analytical Governance — Self-Assessment Tool</a>
-</h3>
-<div class="delink listing-description"><a href="../writing/piece1_audit_plan.html" class="no-external">
-<p>A practical assessment tool for evaluating the governance, quality controls, and ownership arrangements of analytical products.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../writing/piece1_audit_plan.html" class="no-external">
-<div class="listing-date">
-May 21, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -672,4 +937,5 @@ May 21, 2026
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

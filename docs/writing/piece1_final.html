@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="">
+<meta name="description" content="Exploring how analytical teams can apply internal audit principles to strengthen governance and build trust in their outputs.">
 
-<title>Writing – Jasper Cain</title>
+<title>What data teams can learn from internal audit – Jasper Cain</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +35,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -72,65 +72,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<style>html{ scroll-behavior: smooth; }</style>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -144,7 +87,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../writing/index.html">Writing</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Jasper Cain
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -172,7 +117,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../writing/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../writing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing</span></a>
   </div>
 </li>
@@ -188,20 +133,45 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In this piece</h2>
+   
+  <ul class="collapse">
+  <li><a href="#the-invisible-decision" id="toc-the-invisible-decision" class="nav-link active" data-scroll-target="#the-invisible-decision">The invisible decision</a></li>
+  <li><a href="#a-profession-that-hasnt-yet-governed-itself" id="toc-a-profession-that-hasnt-yet-governed-itself" class="nav-link" data-scroll-target="#a-profession-that-hasnt-yet-governed-itself"><em>A profession that hasn’t yet governed itself</em></a></li>
+  <li><a href="#how-the-gap-was-allowed-to-grow" id="toc-how-the-gap-was-allowed-to-grow" class="nav-link" data-scroll-target="#how-the-gap-was-allowed-to-grow"><em>How the gap was allowed to grow</em></a></li>
+  <li><a href="#when-the-cost-of-getting-it-wrong-increased" id="toc-when-the-cost-of-getting-it-wrong-increased" class="nav-link" data-scroll-target="#when-the-cost-of-getting-it-wrong-increased"><em>When the cost of getting it wrong increased</em></a></li>
+  <li><a href="#what-audit-would-have-asked" id="toc-what-audit-would-have-asked" class="nav-link" data-scroll-target="#what-audit-would-have-asked"><em>What audit would have asked</em></a></li>
+  <li><a href="#the-pattern-behind-the-problems" id="toc-the-pattern-behind-the-problems" class="nav-link" data-scroll-target="#the-pattern-behind-the-problems"><em>The pattern behind the problems</em></a></li>
+  <li><a href="#what-regular-audit-would-have-changed" id="toc-what-regular-audit-would-have-changed" class="nav-link" data-scroll-target="#what-regular-audit-would-have-changed"><em>What regular audit would have changed</em></a></li>
+  <li><a href="#companion-document" id="toc-companion-document" class="nav-link" data-scroll-target="#companion-document">Companion document</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="piece1_final.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Writing</h1>
+<h1 class="title">What data teams can learn from internal audit</h1>
 </div>
 
+<div>
+  <div class="description">
+    Exploring how analytical teams can apply internal audit principles to strengthen governance and build trust in their outputs.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-body">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -211,49 +181,110 @@ window.Quarto = {
 </header>
 
 
+<div class="standfirst">
+<p><em>This piece is addressed to two groups: analysts and analytical leaders who know this problem from the inside, and the senior leaders who commission and receive the work. Both have a part in the response.</em></p>
+</div>
+<section id="the-invisible-decision" class="level2">
+<h2 class="anchored" data-anchor-id="the-invisible-decision">The invisible decision</h2>
+<p>“How many occupied bed days did this hospital have last month?” It sounds like a simple question with a single correct answer, but it isn’t.</p>
+<p>The analyst providing the figure is making a series of decisions that are entirely invisible to the people receiving the report.</p>
+<ul>
+<li>How is a bed counted as occupied? Is it a snapshot — and if so, at 8am, midnight, or midday?</li>
+<li>If not a snapshot, does it count anyone in a bed at any point in a 24-hour period? What about patients transferred to a different ward the same day?</li>
+<li>Does a chair or trolley count as a bed?</li>
+<li>Are critical care and maternity beds included, or only general and acute?</li>
+<li>If a bed was booked for a patient arriving later, but empty at the snapshot time — is it occupied?</li>
+</ul>
+<p>This is not an obscure edge case. It is one of many such scenarios in which decisions are being made by individual analysts, in isolation, with no reference to a centrally agreed definition. The analyst producing a measure for a specialty manager may be producing a different number to the analyst producing the same measure for the Integrated Board Report. Neither is wrong. Both are a problem.</p>
+<p>This is an example of the governance gap in NHS analysis teams. It is structural and largely unnoticed, until it causes a problem.</p>
+<p>However, as data analysts move from back-office support to being a key part of high impact decisions we can no longer leave it unaddressed.</p>
+</section>
+<section id="a-profession-that-hasnt-yet-governed-itself" class="level2">
+<h2 class="anchored" data-anchor-id="a-profession-that-hasnt-yet-governed-itself"><em>A profession that hasn’t yet governed itself</em></h2>
+<p>I want to acknowledge that individual analysts are not at fault. The decisions described above are reasonable ones, made in the absence of organisational standards that should already exist, but don’t. The analyst calculating OBD at midnight is not wrong. They are using their professional judgement to make a choice, and so is every other analyst in every other team doing the same thing differently.</p>
+<p>The failure belongs to the profession as a collective, and to the data leaders who have not prioritised governance processes which would mitigate this risk. As a professional group we have not taken steps to ensure that the data story at board level is aligned with the story told at every other level of the organisation.</p>
+<p>This matters because good data analysis is not inert. It drives decisions. The board will set strategic priorities, allocates resources, and receives assurances using the analysis they receive. All three of those functions are compromised when board-level metrics diverge from operational metrics. The reality the analysis is trying to describe can be obscured by the mistrust of data that arises in such confusion.</p>
+<p>However, the more dangerous version of this problem is more subtle. It is when the discrepancy between measures has not been noticed and different parts of the organisation are using the same word to mean different things, and nobody has yet noticed.</p>
+<p>Professions that govern themselves don’t wait to be audited before addressing problems. Finance didn’t develop chartered accountancy because regulators demanded it. As a profession, they recognised that the risks of unverified and unregulated work would impact the reputation of them all. Analytics is at an equivalent moment. The case for professional standards, shared frameworks, and independent accountability is the same case made for finance in the 1800s. That is where the analyst profession should begin. Not because audit scrutiny is undesirable or unnecessary, but because the organisations that will benefit most from it are the ones who have already asked the right questions of themselves.</p>
+</section>
+<section id="how-the-gap-was-allowed-to-grow" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-gap-was-allowed-to-grow"><em>How the gap was allowed to grow</em></h2>
+<p>Data analysis has always had these governance gaps. Internal Audits of performance frameworks and board measures rarely wanted to delve into the detail of how the numbers were generated. The focus was on how they were being used and responded to.</p>
+<p>Focusing on the upstream creation of measures was hampered by several factors.</p>
+<ul>
+<li>The complexity of code requiring a specialist with knowledge of both the SQL query and the underlying data structures before being able to identify potential risks.</li>
+<li>Access to data — even a technically capable auditor would struggle to be granted access to an organisation’s data warehouse within the timescales of a 15 day audit engagement. As internal audit teams shifted to externally contracted services, this was even more difficult, with basic requirements like access credentials and an organisation-issued laptop being practical barriers that couldn’t easily be overcome.</li>
+<li>Lack of presence on the risk register — good Internal Audit plans are developed to provide assurance over the significant risks to the organisation. If analytical governance has not been identified by the organisation as a risk, then time will be spent on more obvious areas that carry clearer organisational risk.</li>
+</ul>
+<p>These three factors compounded each other. Analytical infrastructure was too complex for generalist auditors, too inaccessible for contracted ones, and too absent from risk registers for any structured assurance programme to prioritise it. Over time, analyst processes settled into a culture of the single analyst solving problems for their stakeholder alone, with no wider governance ensuring best practices were adopted at a profession-wide level.</p>
+</section>
+<section id="when-the-cost-of-getting-it-wrong-increased" class="level2">
+<h2 class="anchored" data-anchor-id="when-the-cost-of-getting-it-wrong-increased"><em>When the cost of getting it wrong increased</em></h2>
+<p>Over the past decade, analytics has moved from describing what happened to explaining why, predicting what will happen, and recommending what to do. I have watched this shift from the inside, and it is genuinely encouraging. Analysts are embedded in operational decisions in ways that would have been unusual ten years ago. The NHS should be data-driven, and the appetite for rigorous analysis of mountains of data is something worth welcoming.</p>
+<p>But the governance cost of an inconsistent metric has risen in proportion to analytical influence. What was a confusing spreadsheet is now a board receiving false assurance. It is resources being diverted from one treatment to another because the analysis identified it was better. The impact of our analysis will only continue to grow.</p>
+<p>AI tools and large language models are beginning to enter analytical workflows, using our existing work as the model for how to use our data infrastructure and provide insight. Organisations that haven’t yet established the basics of sound analytical governance are being asked to oversee something considerably more complex. The foundations matter more, not less, as the tools become more powerful.</p>
+</section>
+<section id="what-audit-would-have-asked" class="level2">
+<h2 class="anchored" data-anchor-id="what-audit-would-have-asked"><em>What audit would have asked</em></h2>
+<p>If an Internal Audit were to be invited to review the analytics department, they would structure their thinking around the concepts of Objectives → Risks → Controls. A very simple example would be:</p>
+<p><strong>Objectives — What does the system try to achieve?</strong></p>
+<ul>
+<li>Reliable and relevant information is provided to those who need it at the right time.</li>
+</ul>
+<p><strong>Risks — What are the risks that would impact this objective?</strong></p>
+<ul>
+<li>Information is inaccurate or misunderstood, therefore decisions are based on faulty premises.</li>
+</ul>
+<p><strong>Controls — What processes are in place to mitigate these risks?</strong></p>
+<ul>
+<li>Version control and transparent definitions ensures a single version of the truth which is understood by all. If an analyst produces information that deviates from the standard definition, the reasons are understood and clearly documented. Any changes to measures are documented and able to be undone if necessary for historical comparisons.</li>
+<li>Definitions of measures are worked through with relevant stakeholders who will be using the information, not developed in isolation.</li>
+<li>Reproducible Analytical Pipelines (standardised, shareable approaches to common analytical tasks, built on version-controlled code) ensure that analysts can produce analysis reliably, without needing to re-invent the wheel each time.</li>
+<li>Analytical products have named ownership on both the commissioner and analyst side. The responsibilities that come with ownership are clear and handover processes ensure that accountability is never lost to turnover.</li>
+</ul>
+<p>If we are honest with ourselves, most analyst teams don’t implement the controls necessary to provide assurance that the overarching objective of analysis is being met. Furthermore, the absence of any one of these controls tends to accelerate the failure of the others. Without ownership, definitions diverge and without definitions, version control can’t be authoritative.</p>
+</section>
+<section id="the-pattern-behind-the-problems" class="level2">
+<h2 class="anchored" data-anchor-id="the-pattern-behind-the-problems"><em>The pattern behind the problems</em></h2>
+<p>The gap between the controls above and current processes reveals itself in repeated patterns of practice, and repeated patterns of failure.</p>
+<p><strong>Failure 1: No single source of truth</strong></p>
+<p>Too many reported metrics are undefined. Too many decisions are being made by good analysts in isolation from each other. Every metric that is regularly reported, from Board to Ward, should have a documented, accessible and transparent definition.</p>
+<p><strong>Failure 2: Absence of version control</strong></p>
+<p>Version control in NHS analytics is not fit for purpose. Many measures, particularly those below Board level, will have no documented definition. There is no record of whether that definition has changed over time, or what impact those changes had. We cannot provide assurance that such measures can distinguish between genuine improvement and methodological drift. This fundamentally limits the worth of what we provide.</p>
+<p>This is not true in all areas — in some teams there is good adoption of git repositories, which provide a clear history of changes and enable rollback to previous versions of code if needed. But this is localised to individuals and small teams. It is not universally adopted across the NHS analytics profession, or mandated by the organisations we work in.</p>
+<p><strong>Failure 3: Limited accountability and ownership of analytical outputs</strong></p>
+<p>Ownership of analysis is vague and often unwanted. When a manager asks for a new dashboard, they rarely want to be held accountable for all future changes and additions to the dashboard.</p>
+<p>Additionally, as dashboards and reports age, they outlive their builders. They are inherited by the next generation of managers and analysts without any formal handover, and accountability for the accuracy and relevance of the analysis becomes contested whilst engagement stagnates due a lack of relevance in what is being presented.</p>
+</section>
+<section id="what-regular-audit-would-have-changed" class="level2">
+<h2 class="anchored" data-anchor-id="what-regular-audit-would-have-changed"><em>What regular audit would have changed</em></h2>
+<p>The audit plan above is hypothetical — but the findings it would have produced are not. And if the plan were to be expanded to other risks, such as timeliness or relevance, more could be easily identified.</p>
+<p><strong>On definitions.</strong></p>
+<p>Audits would have found limited documented definitions for the metrics an organisation regularly reports, and ambiguous processes for agreeing them.</p>
+<p>The recommendations would have been straightforward: a register of definitions, signed off by both analytical and operational leads for every metric in regular production, and backed up by validated code that ensured any analyst could reconcile their analysis with what is reported elsewhere in the organisation.</p>
+<p>This would have multiple benefits. Analysts would make fewer invisible choices in isolation. When stakeholders ask what a number means, there is a documented answer. And when the same question is asked by a Specialty Manager and the operations director, the relationship between their different answers is known and easily explained.</p>
+<p><strong>On version control.</strong></p>
+<p>Audits would have found no reliable record of what changed in analytical code, when it changed, or why — making it structurally impossible to distinguish genuine performance improvement from methodological drift.</p>
+<p>A metric that improves over time might reflect better care, or it might reflect a redefined denominator. Without version control, the organisation cannot know which it is looking at, and assurance that performance has improved is worth less than it appears.</p>
+<p>The recommendation would have been mandatory version control for all production analytical code. This is a minimum condition for assurance that analytical outputs can be relied upon over time, and has the added benefit of being a significant productivity gain. When code is centrally maintained, analysts can search what already exists rather than rebuilding from scratch each time. Some teams already work this way, but it is not mandated, and the organisations relying on the outputs are not asking whether it is in place.</p>
+<p><strong>On ownership.</strong></p>
+<p>An audit would have found accountability for live analytical products to be informal, frequently contested, and routinely lost when people move on.</p>
+<p>Dashboards outlive their builders. Reports are inherited without formal handover. The analyst who knows why a particular definition was chosen leaves, and that knowledge leaves with them. The recommendation would have been named ownership on both sides of the analytical relationship — a commissioner who retains ongoing responsibility for relevance and engagement, and an analyst who retains responsibility for accuracy and maintenance — with explicit handover processes when either party changes role. The change is that the organisation always knows who is responsible for what it is looking at, and that person knows they are responsible.</p>
+<p><strong>Taking the next step.</strong></p>
+<p>The example findings above are not radical or new. They are common in private businesses, and strict governance structures are already enforced in other domains of the NHS. Financial accountants do not decide individually how to amortise capital expenditure. Clinicians are expected to follow clinical guidelines. The difference for analysts is that we do not need to wait for external regulation to demand change. Analytical professionals are in a position to ask these questions of themselves now and build the structures that give us a firm footing.</p>
+<p>The template audit plan published alongside this piece is intended as a practical starting point. It presents a set of tests that analytical functions and the senior leaders who commission their work can apply to assess with clarity how mature their governance controls are. It is meant as a tool for self-assessment, to establish what level of assurance the organisation has over its analytical outputs and identify where the gaps are. The right people to work through it are analytical leaders and senior management who commission analytical work, because responsibility for addressing the findings requires both, and because placing analytical governance on the organisation’s risk register, with a named owner and a regular review cycle, is precisely the kind of decision that neither can make alone.</p>
+<p>Now that Analytics is taking a material role in decisions about resources, pathways, and patient care, it needs to build solid governance foundations that most senior staff will assume are already in place.</p>
+<p>That is what regular internal audit would have changed. Not the quality of individual analysts, which in many cases is high. Not the ambition of the organisations commissioning the work. Internal Audit would have helped to identify the controls and conditions necessary to ensure good analytical work can be relied upon, and assure others of its quality.</p>
+<hr>
+</section>
+<section id="companion-document" class="level2">
+<h2 class="anchored" data-anchor-id="companion-document">Companion document</h2>
+<p>A practical tool to assess your own analytical governance: <a href="../writing/piece1_audit_plan.html">Analytical Governance — Self-Assessment Tool</a></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1779355928000" data-listing-file-modified-sort="1779355928563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2250">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../writing/piece1_final.html" class="no-external">What data teams can learn from internal audit</a>
-</h3>
-<div class="delink listing-description"><a href="../writing/piece1_final.html" class="no-external">
-<p>Exploring how analytical teams can apply internal audit principles to strengthen governance and build trust in their outputs.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../writing/piece1_final.html" class="no-external">
-<div class="listing-date">
-May 21, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1779355921000" data-listing-file-modified-sort="1779355921778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1955">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../writing/piece1_audit_plan.html" class="no-external">Analytical Governance — Self-Assessment Tool</a>
-</h3>
-<div class="delink listing-description"><a href="../writing/piece1_audit_plan.html" class="no-external">
-<p>A practical assessment tool for evaluating the governance, quality controls, and ownership arrangements of analytical products.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../writing/piece1_audit_plan.html" class="no-external">
-<div class="listing-date">
-May 21, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -672,4 +703,5 @@ May 21, 2026
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

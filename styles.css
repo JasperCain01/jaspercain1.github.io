@@ -185,6 +185,22 @@ h3 {
   color: #1f2937;
 }
 
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #374151;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;

@@ -1,8 +1,0 @@
----
-title: "Statistics Methods Primer"
-description: "A reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed."
-date: 2024-01-10
-repo: "https://github.com/JasperCain01/statistics_methods_primer"
----
-
-[View on GitHub →](https://github.com/JasperCain01/statistics_methods_primer){.btn .btn-outline-primary .btn-sm}

@@ -41,7 +41,7 @@ Serving the broader NHS analytical community and contributing to discussions abo
 ## Get in touch
 
 ::: {.about-links}
-[LinkedIn](https://linkedin.com/in/yourprofile){.btn .btn-outline-primary}
+[LinkedIn](https://www.linkedin.com/in/jasper-cain-a56a6ba6/){.btn .btn-outline-primary}
 [GitHub](https://github.com/JasperCain01){.btn .btn-outline-secondary}
 [Email](mailto:jcainsecondemail@gmail.com){.btn .btn-outline-secondary}
 :::
@@ -69,14 +69,14 @@ Why slowing down matters in an age of information overload.
 
 ## Recent Projects
 
-**[This Website](projects/personal-site.qmd)**
-Building and iterating on a personal site with Quarto.
+**[qvdr](projects/index.qmd#qvdr)**
+An R package that reads QVD (QlikView Data) binary files into R tibbles.
 
-**[Data Pipeline](projects/data-pipeline.qmd)**
-Automating data workflows for reliability and scale.
+**[Statistics Methods Primer](projects/index.qmd#statistics-methods-primer)**
+A reference source for NHS analysts without a formal statistical background.
 
-**[Analysis Tool](projects/analysis-tool.qmd)**
-Building tools that make analysis more efficient.
+**[Recipe App](projects/index.qmd#recipe-app)**
+An app for searching recipes based on ingredients and cuisine preferences.
 
 [View all projects →](projects/index.qmd)
 

@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/projects/index.html",
-    "items": [
-      "/projects/personal-site.html",
-      "/projects/data-pipeline.html",
-      "/projects/analysis-tool.html"
-    ]
-  },
-  {
     "listing": "/writing/index.html",
     "items": [
       "/writing/on-systems-thinking.html",

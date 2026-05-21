@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-04-20">
-<meta name="description" content="A lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.">
+<meta name="dcterms.date" content="2024-01-15">
+<meta name="description" content="An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.">
 
-<title>Automated Data Pipeline – Jasper Cain</title>
+<title>qvdr – Jasper Cain</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -172,16 +137,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Automated Data Pipeline</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Python</div>
-    <div class="quarto-category">data engineering</div>
-  </div>
-  </div>
+<h1 class="title">qvdr</h1>
+</div>
 
 <div>
   <div class="description">
-    A lightweight ETL pipeline that pulls from multiple APIs, transforms the data, and loads it into a local database for analysis.
+    An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.
   </div>
 </div>
 
@@ -192,7 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 20, 2026</p>
+      <p class="date">January 15, 2024</p>
     </div>
   </div>
   
@@ -204,44 +165,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This project builds a simple, reproducible data pipeline using Python and DuckDB. It pulls data from [source APIs], runs a set of transformations, and stores the results in a local analytical database.</p>
-<p><strong>Status:</strong> Active development</p>
-</section>
-<section id="motivation" class="level2">
-<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
-<p>I kept needing to do the same data wrangling steps across different projects. This is an attempt to make that reusable.</p>
-</section>
-<section id="tech-stack" class="level2">
-<h2 class="anchored" data-anchor-id="tech-stack">Tech stack</h2>
-<ul>
-<li><strong>Language:</strong> Python 3.11</li>
-<li><strong>Database:</strong> DuckDB</li>
-<li><strong>Scheduling:</strong> Cron / GitHub Actions</li>
-<li><strong>Dependencies:</strong> <code>httpx</code>, <code>polars</code>, <code>duckdb</code></li>
-</ul>
-</section>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features">Key features</h2>
-<ul>
-<li>Incremental loading — only fetches records newer than the last run</li>
-<li>Schema validation on ingestion</li>
-<li>Lightweight CLI interface</li>
-</ul>
-</section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
-<p><em>[GitHub repository link — placeholder]</em></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: loading a single source</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pipeline <span class="im">import</span> load_source</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>load_source(<span class="st">"api_name"</span>, since<span class="op">=</span><span class="st">"2026-01-01"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<hr>
-<p><em>More detail coming soon.</em></p>
+<p><a href="https://github.com/JasperCain01/qvdr" class="btn btn-outline-primary btn-sm">View on GitHub →</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

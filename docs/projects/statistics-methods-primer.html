@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-10">
-<meta name="description" content="A small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.">
+<meta name="dcterms.date" content="2024-01-10">
+<meta name="description" content="A reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed.">
 
-<title>Exploratory Analysis Tool – Jasper Cain</title>
+<title>Statistics Methods Primer – Jasper Cain</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -172,17 +137,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exploratory Analysis Tool</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Python</div>
-    <div class="quarto-category">data analysis</div>
-    <div class="quarto-category">viz</div>
-  </div>
-  </div>
+<h1 class="title">Statistics Methods Primer</h1>
+</div>
 
 <div>
   <div class="description">
-    A small interactive dashboard for quickly profiling a CSV or database table — distributions, missing data, correlations.
+    A reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed.
   </div>
 </div>
 
@@ -193,7 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 10, 2026</p>
+      <p class="date">January 10, 2024</p>
     </div>
   </div>
   
@@ -205,45 +165,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Before diving into any dataset I find myself running the same exploratory checks: distributions, missing values, correlations, outliers. This tool automates those first steps into a single command.</p>
-<p><strong>Status:</strong> Prototype</p>
-</section>
-<section id="motivation" class="level2">
-<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
-<p>The goal is to get from “here is a CSV” to “I understand the shape of this data” in under a minute, without writing boilerplate.</p>
-</section>
-<section id="tech-stack" class="level2">
-<h2 class="anchored" data-anchor-id="tech-stack">Tech stack</h2>
-<ul>
-<li><strong>Language:</strong> Python 3.11</li>
-<li><strong>Visualisation:</strong> Plotly / <code>great_tables</code></li>
-<li><strong>Interface:</strong> CLI + HTML report output</li>
-</ul>
-</section>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features">Key features</h2>
-<ul>
-<li>Numeric column profiling (min, max, mean, p25/p75, histogram)</li>
-<li>Missing data heatmap</li>
-<li>Pairwise correlation matrix</li>
-<li>Exports a self-contained HTML report</li>
-</ul>
-</section>
-<section id="usage" class="level2">
-<h2 class="anchored" data-anchor-id="usage">Usage</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Profile a CSV</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> profile.py <span class="at">--input</span> data.csv <span class="at">--output</span> report.html</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
-<p><em>[GitHub repository link — placeholder]</em></p>
-<hr>
-<p><em>More detail coming soon.</em></p>
+<p><a href="https://github.com/JasperCain01/statistics_methods_primer" class="btn btn-outline-primary btn-sm">View on GitHub →</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -88,6 +88,8 @@
   top: 2rem;
   padding-left: 2rem;
   border-left: 2px solid #e5e7eb;
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
 }
 
 .sidebar-content h2 {
@@ -110,4 +112,80 @@
 
 .sidebar-content a:hover {
   text-decoration: underline;
+}
+
+/* Project cards */
+.quarto-grid-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  background: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.quarto-grid-item:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+.quarto-grid-item .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.quarto-grid-item .card-text {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Override Quarto's description truncation */
+.listing-description {
+  max-height: none !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
+.listing-description p {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* Project page linear layout */
+.quarto-title-block {
+  margin-bottom: 2rem;
+}
+
+h2[id] {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  border-top: 2px solid #e5e7eb;
+  padding-top: 2rem;
+}
+
+h2[id]:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
 }

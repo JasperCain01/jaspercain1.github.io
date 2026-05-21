@@ -1,0 +1,9 @@
+---
+title: "Recipe App"
+description: "An app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of cuisine you prefer. This was my first app, and it was fully vibe-coded using claude. The process did teach me a lot about how apps are structured, and also gave me an appreciation for how easy it can be to create something that 'works', whilst having no understanding of the languages and tools utilised. As such, there are lots of questions to be asked of how much detailed understanding should we require of AI generated outputs before we are willing to use them personally, and how do those requirements differ in a business or public sector environment."
+
+date: 2024-01-05
+repo: "https://github.com/JasperCain01/Recipe-App"
+---
+
+[View on GitHub →](https://github.com/JasperCain01/Recipe-App){.btn .btn-outline-primary .btn-sm}

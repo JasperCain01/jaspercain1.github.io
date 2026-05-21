@@ -1,0 +1,10 @@
+---
+title: "qvdr"
+description: "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik's proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs. "
+date: 2024-01-15
+
+
+repo: "https://github.com/JasperCain01/qvdr"
+---
+
+[View on GitHub →](https://github.com/JasperCain01/qvdr){.btn .btn-outline-primary .btn-sm}

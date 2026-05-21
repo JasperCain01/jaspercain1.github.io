@@ -88,6 +88,8 @@
   top: 2rem;
   padding-left: 2rem;
   border-left: 2px solid #e5e7eb;
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
 }
 
 .sidebar-content h2 {

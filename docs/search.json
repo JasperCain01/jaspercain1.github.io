@@ -1,5 +1,132 @@
 [
   {
+    "objectID": "projects/qvdr.html",
+    "href": "projects/qvdr.html",
+    "title": "qvdr",
+    "section": "",
+    "text": "View on GitHub →"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#qvdr",
+    "href": "projects/index.html#qvdr",
+    "title": "Projects",
+    "section": "",
+    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#statistics-methods-primer",
+    "href": "projects/index.html#statistics-methods-primer",
+    "title": "Projects",
+    "section": "",
+    "text": "Statistics Methods Primer\nA reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#recipe-app",
+    "href": "projects/index.html#recipe-app",
+    "title": "Projects",
+    "section": "",
+    "text": "Recipe App\nAn app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of cuisine you prefer. This was my first app, and it was fully vibe-coded using claude. The process did teach me a lot about how apps are structured, and also gave me an appreciation for how easy it can be to create something that ‘works’, whilst having no understanding of the languages and tools utilised. As such, there are lots of questions to be asked of how much detailed understanding should we require of AI generated outputs before we are willing to use them personally, and how do those requirements differ in a business or public sector environment.\nView on GitHub →",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.\n\n\n\nI’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is where I’m going to try and do some thinking out loud. All views are my own, and should not be considered representative of the organisations I work for.\n\n\n\n\nPrincipal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.\n\n\n\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\n\nAnalytics is becoming a profession. Is your organisation leading or following? Why organisations that lead and celebrate the professionalisation of analysts will benefit the most.\nWhat data teams can learn from internal audit Exploring gaps in analytical governance, and how looking through the perspective of an internal audit can strengthen analyst teams.\nAnalytical Governance — Self-Assessment Tool A practical assessment tool for evaluating analytical governance controls.\nView all writing →\n\n\n\n\nqvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A reference source for NHS analysts without a formal statistical background.\nRecipe App An app for searching recipes based on ingredients and cuisine preferences.\nView all projects →",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#hi-im-jasper",
+    "href": "index.html#hi-im-jasper",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#what-im-interested-in",
+    "href": "index.html#what-im-interested-in",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "I’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is where I’m going to try and do some thinking out loud. All views are my own, and should not be considered representative of the organisations I work for.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#work",
+    "href": "index.html#work",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "Principal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#get-in-touch",
+    "href": "index.html#get-in-touch",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "LinkedIn GitHub Email",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#recent-writing",
+    "href": "index.html#recent-writing",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "Analytics is becoming a profession. Is your organisation leading or following? Why organisations that lead and celebrate the professionalisation of analysts will benefit the most.\nWhat data teams can learn from internal audit Exploring gaps in analytical governance, and how looking through the perspective of an internal audit can strengthen analyst teams.\nAnalytical Governance — Self-Assessment Tool A practical assessment tool for evaluating analytical governance controls.\nView all writing →",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Jasper Cain",
+    "section": "",
+    "text": "qvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A reference source for NHS analysts without a formal statistical background.\nRecipe App An app for searching recipes based on ingredients and cuisine preferences.\nView all projects →",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "writing/index.html",
+    "href": "writing/index.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Analytical Governance — Self-Assessment Tool\n\n\nA practical assessment tool for evaluating the governance, quality controls, and ownership arrangements of analytical products.\n\n\n\n\n\nMay 30, 2026\n\n\n\n\n\n\n\nAnalytics is becoming a profession. Is your organisation leading or following?\n\n\nWhy organisations that lead and celebrate the professionalisation of analysts will benefit the most.\n\n\n\n\n\nMay 30, 2026\n\n\n\n\n\n\n\nWhat data teams can learn from internal audit\n\n\nExploring gaps in analytical governance, and how looking through the perspective of an internal audit can strengthen analyst teams.\n\n\n\n\n\nMay 21, 2026\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Writing"
+    ]
+  },
+  {
     "objectID": "writing/piece1_final.html",
     "href": "writing/piece1_final.html",
     "title": "What data teams can learn from internal audit",
@@ -84,6 +211,13 @@
     "text": "Audit test schedule\nObjective 1: Reliable and relevant information is provided to those who need it at the right time.\n\n\nRisk 1.1\nIf analytical outputs contain calculation errors, methodological drift, or other defects, then decisions may be taken based on unreliable information.\n\nControl 1.1.1\nVersion control is in place for production analytical code, with a clear commit history. The most recent authoritative version of each measure’s code is identifiable and accessible to any analyst who might need to use or check it.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.1.1.1\nFOUNDATIONAL\nConfirm whether a version control system (e.g. Git) is used for analytical code that produces regularly reported measures. Document the proportion of regularly reported measures whose source code is held in version control versus held only in individual analyst files, or restricted network locations.\n\n\n1.1.1.2\nCONFIRMATORY\nFor a sample of measures, ask an analyst to demonstrate that the version currently producing the reported figure is the same as the most recent committed version in the repository, and that the commit history is meaningful.\n\n\n\n\n\nControl 1.1.2\nCalculation logic for measures used in significant operational, performance, or safety reporting is reviewed by a second analyst before the measure enters regular production, and after any material change. When errors are subsequently identified, they are investigated and corrected, with affected stakeholders informed.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.1.2.1\nFOUNDATIONAL\nIdentify whether a peer-review process exists for analytical code. If it does, document where the process is held, what it requires, and whether it is known to analysts across the trust including those embedded in clinical divisions.\n\n\n1.1.2.2\nCONFIRMATORY\nFor a sample of measures introduced or materially changed in the past 12 months, ask the relevant analytical lead to evidence that the calculation logic was reviewed by a second analyst before being used in regular reporting.\n\n\n1.1.2.3\nCONFIRMATORY\nIdentify any errors that have been discovered in regularly reported measures in the past 24 months. For each, confirm that the cause was understood, the output corrected, and affected stakeholders informed — including stakeholders below trust level who may have been using the same metric.\n\n\n\n\n\n\n\nRisk 1.2\nIf the same metric is calculated differently in different parts of the organisation, then management decisions may be made that conflict and enact actions that work at cross-purposes.\n\nControl 1.2.1\nA definition register is maintained for regularly reported metrics, recording what each metric includes and excludes and how it is calculated. The register is accessible to all analysts and to operational and executive stakeholders.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.2.1.1\nFOUNDATIONAL\nConfirm whether a definition register exists. Document its location, who is responsible for maintaining it, what scope it covers (e.g. trust-level only, or also divisional/specialty metrics), and whether it is accessible to all analysts and stakeholders.\n\n\n1.2.1.2\nCONFIRMATORY\nSelect a sample of metrics from the register. Ask an analyst to confirm that the documented definition matches the calculation currently being used to produce the reported figure.\n\n\n1.2.1.3\nCONFIRMATORY\nAsk a sample of operational managers — including those at divisional and specialty level — what they understand by each of two named metrics they use regularly. Compare their answers to the documented definition. Note any divergence between operational understanding and the definition in use.\n\n\n\n\n\nControl 1.2.2\nDefinitions are agreed with both analytical and operational leads before a metric enters regular reporting, with sign-off documented. This applies equally to trust-wide measures and to measures developed within divisions or specialties.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.2.2.1\nFOUNDATIONAL\nIdentify whether a process exists requiring sign-off from both analytical and operational leads before a definition is committed to regular reporting. Document where sign-off is recorded and whether the process applies to divisional and specialty metrics, not only trust-level metrics.\n\n\n1.2.2.2\nCONFIRMATORY\nFor a sample of metrics that entered regular reporting in the past 24 months — drawn from trust, divisional, and specialty levels — confirm that documented sign-off exists from both an analytical and an operational lead.\n\n\n\n\n\nControl 1.2.3\nWhere the same metric is legitimately calculated differently at different levels of the organisation, the relationship between the versions is documented and known to both analytical and operational leads.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.2.3.1\nFOUNDATIONAL\nIdentify whether documentation exists describing the relationship between different versions of metrics that are reported at multiple levels — for example, the relationship between trust-level occupied bed days reported to the board, divisional bed occupancy reported to a divisional committee, and ward-level occupancy used operationally.\n\n\n1.2.3.2\nCONFIRMATORY\nSelect a sample of metrics reported at more than one level of the organisation. Ask an analyst to demonstrate that the relationship between the different versions can be explained and, where possible, reconciled using documented code or methodology.\n\n\n\n\n\n\n\nRisk 1.3\nIf analytical products have insufficient oversight, then the information used to make decisions cannot be relied upon.\n\nControl 1.3.1\nEvery live analytical product has a named owner on the analytical side, responsible for accuracy and maintenance, and a named owner on the commissioner side, responsible for ongoing relevance.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.3.1.1\nFOUNDATIONAL\nProduce a list of live analytical products across all levels of the organisation. For each, confirm that an analytical owner and a commissioner owner are named and current.\n\n\n1.3.1.2\nCONFIRMATORY\nFor a sample of products, confirm that the named owners are aware of and accept their responsibilities, and that the responsibilities themselves are documented — not merely the names.\n\n\n\n\n\nControl 1.3.2\nLive products are subject to periodic review with authority to decommission products that no longer serve their original purpose.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.3.2.1\nFOUNDATIONAL\nIdentify whether a documented review process exists. Document its frequency, who undertakes it, and what authority exists to decommission products that fail review.\n\n\n1.3.2.2\nCONFIRMATORY\nFor a sample of products in regular production, identify when each was last formally reviewed for continued relevance. Document any that have not been reviewed within the last 12 months.\n\n\n1.3.2.3\nCONFIRMATORY\nIdentify any products that have been formally decommissioned in the past 24 months. If none have been, consider whether this reflects that all products are still genuinely needed, or that the review process is not producing meaningful action.\n\n\n\n\n\nControl 1.3.3\nFormal handover processes are in place, triggered when either the analytical owner or the commissioner changes role, ensuring that institutional knowledge of the product is transferred. This is particularly important for products held at specialty level, where analytical knowledge often resides in one or two individuals.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.3.3.1\nFOUNDATIONAL\nIdentify whether a documented handover process exists. Document what it requires and who is responsible for ensuring it is followed.\n\n\n1.3.3.2\nCONFIRMATORY\nIdentify a sample of products where the analytical or commissioner owner has changed in the past 24 months. For each, confirm that a formal handover took place and that the new owner can articulate why the product exists and how it works.\n\n\n1.3.3.3\nCONFIRMATORY\nAssess whether there are any products where an original owner has left and no formal handover occurred. Document the knowledge gap this creates and whether it is recoverable.\n\n\n\n\n\nControl 1.3.4\nAnalytical governance is on the organisation’s risk register, with a named owner, a defined risk description, and a regular review cycle aligned with other organisational risks. This ensures that the controls above remain subject to ongoing scrutiny rather than being assessed once and left.\n\n\n\n\n\n\n\n\nRef\nType\nTest\n\n\n\n\n1.3.4.1\nFOUNDATIONAL\nConfirm whether analytical governance appears on the organisation’s risk register. If it does, identify how the risk is described, who owns it, and how frequently it is reviewed.\n\n\n1.3.4.2\nCONFIRMATORY\nIf analytical governance is on the risk register, assess whether the most recent review produced meaningful action or was a routine roll-forward. If it is not on the register, identify who would need to agree to put it there and what evidence they would need to support that decision.\n\n\n1.3.4.3\nCONFIRMATORY\nConfirm whether the audit committee has received any report on the adequacy of analytical governance arrangements in the past 24 months. If not, identify whether analytical outputs feature in any other assurance reporting received by the audit committee — for example, as a control within other risk areas.\n\n\n\n\nMethodological note: This schedule is informed by the Global Internal Audit Standards (Institute of Internal Auditors, 2024) and the Application Note: Global Internal Audit Standards in the UK Public Sector (Internal Audit Standards Advisory Board, December 2024, effective 1 April 2025). The Objectives → Risks → Controls → Tests methodology used here derives from the risk-based audit planning approach described in Standard 9.4 (Internal Audit Plan) of the Global Standards. The schedule is a management self-assessment tool, not an internal audit engagement, and does not produce an audit opinion."
   },
   {
+    "objectID": "writing/piece2_final.html",
+    "href": "writing/piece2_final.html",
+    "title": "Analytics is becoming a profession. Is your organisation leading or following?",
+    "section": "",
+    "text": "Imagine an advertisement has gone out from an Acute Trust for a new senior analyst. The advert lists some analytical competencies such as SQL, version control, and visualisations, and supervisory experience.\nCandidates are all given a two-part interview. The first is a technical test on a synthetic dataset, parsing SQL and producing insights. The second is a pre-prepared presentation on a relevant topic to a panel including another senior analyst and an operational stakeholder. A couple of interviewees do well and are deemed “appointable”, with scoring used to select the preferred candidate.\nAll of this sounds positive, and is frankly a better way to recruit talent into the Trust than some single-stage interviews that happen with no technical assessment or peer input.\nHowever, even in this scenario, the Trust is taking a risk on someone. A 45-minute competency assessment and structured interview will give good insight into what a candidate can do with data in controlled conditions, and how well they prepare for expected interview questions.\nIt will not provide assurance that in practice the candidate follows good version control and documentation processes day to day, or that they will maintain professional behaviours when under pressure and faced with challenges to their findings. It will not validate that the candidate maintains CPD and embeds new learning into their practice.\nNow imagine the same hiring scenario, but the Trust is recruiting an accountant. The preferred candidates are newly chartered accountants. The interview process still matters for finding the right person, but there is a framework providing assurance to the Trust that no matter who they hire, the candidates have a minimum technical competence verified by examinations, they have a shared methodology that is universally recognised and accepted by others, they have a code of professional conduct and ongoing CPD obligations — all administered by a body which can investigate its members, and if necessary, remove the right to practice.\nThe Trust hiring a qualified accountant doesn’t get a better calibre of professional, or someone who is more talented and valuable than an analyst. The Trust instead gets assurance that their competence is verifiable against a known standard, beyond the limits of what a single technical assessment can achieve.\nThere is no equivalent assurance when hiring an analyst, because at the moment, the framework to provide such an assurance is still being built.\nTwo analysts hired the same month by the same Trust, by different hiring managers, may have very different analytical backgrounds and assumptions about what “good” analysis entails. Different documentation standards and methods, and different instincts about how to report ambiguous or contentious results.\nDiversity of backgrounds and professional experience is a strength for an organisation, but different understandings of best practice are not.\nAnalysts currently lack a shared standard for professional conduct, including what an analyst should do when asked to re-interpret the data to match business expectations and preferred narratives. They don’t have a shared standard for technical practices which impact the scalability and resilience of analysis — such as version control, documentation and coding conventions — and they don’t have a code of conduct to back them up when they need to resist unethical pressures.\nBecause these standards are not set, staff compensate with informal controls. Analysts end up adhering to the culture of existing teams; institutional knowledge resides in subject matter experts who can support or mentor new hires. Informal arrangements like this can be beneficial, but they are also fragile. When someone leaves, they take more than their expertise — they take knowledge and understanding of current processes which isn’t easily replaced. Their replacement has no shared framework of understanding of how things should be done.\nConsequently, the weaknesses present in analytical teams are predictable. Technical practices are fragmented and inconsistently applied. Analytical governance is based on individual preferences, and professional conduct is informed by culture — instead of the other way around. Without a common framework for communicating and verifying competencies, an organisation cannot guarantee that the outputs they expect from their analyst teams can survive normal workforce turnover and churn.\nDuring the industrial revolution and the railway mania of the 1800s, the demand for accountancy and auditing services exploded. Money began to be tied up in ever more complex structures, and it was getting difficult to identify a good prospect for investing capital from a bad one.\nIt was in this rapidly evolving and consequential environment that accountants were being used to validate claims and identify frauds. But there was no barrier to entry. Anyone could call themselves an accountant without any knowledge or experience, and so they did.\nIn the decades following the collapse of the railway mania, the more established accounting practitioners wanted to be able to set themselves apart from the crowd. They needed to reassure clients that — unlike others — they would behave with integrity and professionalism, and that they had the skills they claimed.\nMembership meant agreeing to observe rules of conduct, demonstrating competency, and accepting oversight from the accounting body. This wasn’t just about making better accountants; it was to act as a means to provide assurance to customers that their work could be trusted.\nUnfortunately, the history of financial scandals such as Enron and the 2008 financial crisis shows that this isn’t foolproof. Governing bodies cannot always prevent bad actors, and they themselves can become blind to their own failings. However, they still raise the standard. They ensure that when things do go wrong, the failures are visible and the profession is held accountable.\nAccountants across the world speak the same language. Across different regulatory environments, they will still use double-entry accounting, depreciate assets and calculate gross versus net profit margins. This is what data analytics is missing. There is no standard available for verifying analytical competence, and so there is no certainty that a data analyst from Nottingham will have the same principles and standards as the data analyst from the neighbouring city of Derby.\nThere are diverse entry routes into accounting — you can start training with a background in Maths or Music. The barrier to entry remains deliberately low, although the requirements of certification are stringent. Data analysts have the same diversity, and the route to a shared professional framework is being developed with that in mind. The structures of professionalisation that are being built take their inspiration from what came before.\nThere are currently several distinct and complementary routes into professionalisation being established.\nThe established landscape of vendor and tool certifications at one end (such as Data Analytics certificates provided by Google) and existing chartered qualifications at the other end (such as Chartered Statistician or Chartered IT Professional) don’t directly meet the needs of data scientists and analysts. They require either a formal framework rather than a particular software qualification, or have roles that are broader than statistical work and not primarily IT-infrastructure focused.\nThe route most directly comparable to the accountancy example is the Advanced Data Science Professional (AdvDSP) certificate. This certification has been developed by The Alliance for Data Science Professionals — a group including influential bodies such as the Royal Statistical Society, the Institute of Mathematics and the Alan Turing Institute. An application has already been submitted for the AdvDSP to be given chartered status in the UK.\nThe AdvDSP requires individuals to demonstrate competency across a substantial number of standards, and covers ethical behaviours, technical competencies, stakeholder communication and governance requirements such as data definition and quality standards. Continual Professional Development is a formal requirement of certificate holders. This is the most demanding, and probably the best credential currently available in this space. It is most suitable for senior analysts and leaders, and it can be retained no matter where their career takes them.\nNHS England (NHSE) set the expectation in March 2026 that over the next 5 years, all Digital, Data and Technology professionals will have professional membership and registration, starting with the most senior leaders.\nFor people working in analytics, the Association of Professional Healthcare Analysts (AphA) has developed a professional registration route for analysts at all levels working within healthcare. Newly appointed junior analysts through to their Director can be validated as having relevant experience and insight, and receive support from the body advocating for and representing analysts in healthcare. AphA is a member of The Federation for Informatics Professionals in Health and Social Care (FEDIP), who are partnered with NHSE for this requirement.\nSince the announcement by NHSE, professionalisation is no longer a matter of preference for individuals. The expectation has been set, so the choice is now how willingly organisations engage. Asking analytical staff to register is the bare minimum of compliance, but leadership requires much more.\nLeadership means taking action that directly supports analysts to work toward a common standard, and contributes to its continued development. This can be through releasing analysts for CPD, funding membership and celebrating analysts in the organisation who already hold professional credentials. Where possible, participating in standards development as a formal stakeholder, instead of simply being content to accept the standards that others develop. Most importantly, organisational leadership means requiring their analytical functions to demonstrate best practice in methodologies, governance and conduct — not waiting for a bottom-led improvement, but setting a top-down direction of travel. Organisations should make it clear that they are not satisfied with professional registration alone for senior analysts, but expect them to aspire to more challenging and comprehensive certifications like the AdvDSP, in the same way that senior finance professionals are expected to hold Chartered Accountancy qualifications.\nThe organisations that take the lead now will see the return on investment through an analytical function that is more consistent, more engaged, and more accountable. Analysts who see continued learning and development as a core part of their job, not something that is only for their personal benefit. They will benefit from analysts who are confident challenging poor practice and dubious use of data, knowing that they have an external framework which supports their professional judgement.\nThose who don’t engage and passively wait for change will still end up with registered analysts — the NHSE timeline ensures this — but those analysts will still be working in the same organisational culture, one which appears to place no value on the standards of practice and governance they know they should strive for.\nHistory doesn’t repeat itself, but it often rhymes. Analytics now faces the same choices and hurdles that other professions have overcome before. The consequences of poor analysis are now too large to be ignored, or left to individual organisations to try and mitigate.\nInterview processes, no matter how good, cannot verify every facet of an analyst’s competency, nor ensure consistency across the workforce. Without some external validation, you will be reliant on hope that the controlled conditions of an interview accurately reflect real-life working practices.\nProfessionalisation is happening now. Analysts are already becoming registered and certified. The organisations that show they value and endorse their work will have the strongest applicants and the strongest analytical functions in the future."
+  },
+  {
     "objectID": "projects/statistics-methods-primer.html",
     "href": "projects/statistics-methods-primer.html",
     "title": "Statistics Methods Primer",
@@ -91,137 +225,10 @@
     "text": "View on GitHub →"
   },
   {
-    "objectID": "projects/qvdr.html",
-    "href": "projects/qvdr.html",
-    "title": "qvdr",
-    "section": "",
-    "text": "View on GitHub →"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#qvdr",
-    "href": "projects/index.html#qvdr",
-    "title": "Projects",
-    "section": "",
-    "text": "An R package that I developed to make it easier to read QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format designed for fast, efficient storage and retrieval, but cannot be easily used with other analysis tools. My employer uses Qliksense for dashbaording, and being able to use QVDs as a distinct data source outside of Qlik helps ensure consistent analytical inputs and outputs.\nView on GitHub →",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#statistics-methods-primer",
-    "href": "projects/index.html#statistics-methods-primer",
-    "title": "Projects",
-    "section": "",
-    "text": "Statistics Methods Primer\nA reference source for NHS analysts without a formal statistical background. Common concepts and statistical tests are explained in clear language, and example R code is provuided using NHS style data where possible. This project should keep growing over time as more topics are added, and collaboration from other analysts is welcomed.\nView on GitHub →",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#recipe-app",
-    "href": "projects/index.html#recipe-app",
-    "title": "Projects",
-    "section": "",
-    "text": "Recipe App\nAn app which indexes all of the recipes from specified recipe websites and allows you to search for recipes based on what ingredients you want to use and the style of cuisine you prefer. This was my first app, and it was fully vibe-coded using claude. The process did teach me a lot about how apps are structured, and also gave me an appreciation for how easy it can be to create something that ‘works’, whilst having no understanding of the languages and tools utilised. As such, there are lots of questions to be asked of how much detailed understanding should we require of AI generated outputs before we are willing to use them personally, and how do those requirements differ in a business or public sector environment.\nView on GitHub →",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
     "objectID": "projects/recipe-app.html",
     "href": "projects/recipe-app.html",
     "title": "Recipe App",
     "section": "",
     "text": "View on GitHub →"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jasper Cain",
-    "section": "",
-    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.\n\n\n\nI’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.\n\n\n\n\nPrincipal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.\n\n\n\n\n\nLinkedIn GitHub Email\n\n\n\n\n\n\n\nWhat data teams can learn from internal audit NHS Analytics Writing Series — exploring governance and analytical rigour.\nAnalytical Governance — Self-Assessment Tool A practical assessment tool for evaluating analytical governance controls.\nView all writing →\n\n\n\n\nqvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A reference source for NHS analysts without a formal statistical background.\nRecipe App An app for searching recipes based on ingredients and cuisine preferences.\nView all projects →",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#hi-im-jasper",
-    "href": "index.html#hi-im-jasper",
-    "title": "Jasper Cain",
-    "section": "",
-    "text": "I’m a Principal Analyst at Nottingham University Hospitals, where I work across the Quality and Nursing domains — helping clinical and operational teams understand their data, track performance, and make better-informed decisions.\nMy background is a little unconventional for a data analyst: I studied Mathematics at university, spent time at bible college, then trained as a Chartered Accountant (ACCA) through a career in internal audit, before moving into analytical roles in the NHS. That mix of quantitative training, broad academic curiosity, and audit experience has shaped how I approach data work — with a fairly persistent interest in rigour, governance, and how you build analytical processes that are trustworthy.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#what-im-interested-in",
-    "href": "index.html#what-im-interested-in",
-    "title": "Jasper Cain",
-    "section": "",
-    "text": "I’m fascinated by the structures and practices that make analytical work reliable — not just technically correct, but well-governed, reproducible, and fit for the decisions it’s meant to inform. I’m also drawn to the practical side of making analysis more efficient: automating workflows, reducing manual toil, and building tools that let analysts spend more time on the interesting problems.\nBeyond my day job, I serve as Deputy Director of Finance for the Association of Professional Healthcare Analysts, which keeps me connected to the broader community of people working on these same challenges across the NHS.\nRecently I’ve been preoccupied with questions about how analytical services in the NHS will change as AI and other technologies rapidly reshape what’s possible. I’m still working it out — these are early days, the landscape is shifting quickly, and the stakes in healthcare are high enough to warrant some caution alongside the excitement.\nThis site is partly where I do that thinking out loud, and I’m as interested in the conversations it might start as anything I might have to say myself.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#work",
-    "href": "index.html#work",
-    "title": "Jasper Cain",
-    "section": "",
-    "text": "Principal Analyst · Nottingham University Hospitals NHS Trust · present Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.\nChartered Accountant (ACCA) · NHS Internal Audit · previous Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.\nDeputy Director of Finance · Association of Professional Healthcare Analysts · ongoing Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#get-in-touch",
-    "href": "index.html#get-in-touch",
-    "title": "Jasper Cain",
-    "section": "",
-    "text": "LinkedIn GitHub Email",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#recent-writing",
-    "href": "index.html#recent-writing",
-    "title": "Jasper Cain",
-    "section": "",
-    "text": "What data teams can learn from internal audit NHS Analytics Writing Series — exploring governance and analytical rigour.\nAnalytical Governance — Self-Assessment Tool A practical assessment tool for evaluating analytical governance controls.\nView all writing →",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#recent-projects",
-    "href": "index.html#recent-projects",
-    "title": "Jasper Cain",
-    "section": "",
-    "text": "qvdr An R package that reads QVD (QlikView Data) binary files into R tibbles.\nStatistics Methods Primer A reference source for NHS analysts without a formal statistical background.\nRecipe App An app for searching recipes based on ingredients and cuisine preferences.\nView all projects →",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "writing/index.html",
-    "href": "writing/index.html",
-    "title": "Writing",
-    "section": "",
-    "text": "Analytical Governance — Self-Assessment Tool\n\n\nA practical assessment tool for evaluating the governance, quality controls, and ownership arrangements of analytical products.\n\n\n\n\n\nMay 23, 2026\n\n\n\n\n\n\n\nWhat data teams can learn from internal audit\n\n\nExploring how analytical teams can apply internal audit principles to strengthen governance and build trust in their outputs.\n\n\n\n\n\nMay 23, 2026\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Writing"
-    ]
   }
 ]

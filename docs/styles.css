@@ -201,6 +201,11 @@ h5 {
   color: #4b5563;
 }
 
+/* Hide auto-generated Other Formats from title block; placed manually at bottom of each piece */
+.quarto-alternate-formats {
+  display: none;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;

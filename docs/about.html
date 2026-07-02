@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jasper Cain</title>
+<title>About Jasper – Jasper Cain</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-home-writing .list');
+    const listingTargetEl = window.document.querySelector('#listing-about-categories .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -89,35 +89,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-home-writing'] = new List('listing-home-writing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-home-projects .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-lang','listing-website','listing-format','listing-engines','listing-language','listing-title','listing-description','listing-categories','listing-date','listing-repo','listing-repo-display','listing-project-language','listing-status','listing-project-license','listing-toc','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-lang","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-description","listing-categories","listing-date","listing-repo","listing-repo-display","listing-project-language","listing-status","listing-project-license","listing-toc","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-home-projects'] = new List('listing-home-projects', options);
+    window['quarto-listings']['listing-about-categories'] = new List('listing-about-categories', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -163,14 +135,20 @@ window.Quarto = {
 
 <link rel="stylesheet" href="brand.css">
 <link rel="stylesheet" href="site.css">
-<meta property="og:title" content="Jasper Cain">
+<meta property="og:title" content="About Jasper – Jasper Cain">
+<meta property="og:description" content="Writing, projects, and ideas.">
+<meta property="og:image" content="https://jaspercain01.github.io/jaspercain1.github.io/images/portrait.jpeg">
 <meta property="og:site_name" content="Jasper Cain">
-<meta name="twitter:title" content="Jasper Cain">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://jaspercain01.github.io/jaspercain1.github.io/">
+<meta property="og:image:alt" content="Jasper Cain">
+<meta name="twitter:title" content="About Jasper – Jasper Cain">
+<meta name="twitter:description" content="Writing, projects, and ideas.">
+<meta name="twitter:image" content="https://jaspercain01.github.io/jaspercain1.github.io/images/portrait.jpeg">
+<meta name="twitter:image:alt" content="Jasper Cain">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://jaspercain01.github.io/jaspercain1.github.io/about.html">
 </head>
 
-<body class="nav-sidebar docked fullcontent quarto-light">
+<body class="nav-sidebar docked about fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -179,7 +157,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">About</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -224,7 +202,7 @@ Healthcare Analyst &amp; Writer
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
@@ -242,7 +220,7 @@ Healthcare Analyst &amp; Writer
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="./about.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">About</span></a>
   </div>
 </li>
@@ -253,122 +231,95 @@ Healthcare Analyst &amp; Writer
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
-<!-- Editorial masthead — large serif name + uppercase eyebrow + faint ghost "JC".
-     Replaces the original small ghost-circle banner. CSS lives in site.css
-     (.jc-masthead family), kept out of brand.css per the handoff-clean rule. -->
-<div class="jc-masthead">
-  <div class="jc-masthead-eyebrow">Healthcare Analyst &amp; Writer</div>
-  <p class="jc-masthead-name">Jasper Cain</p>
-  <div class="jc-masthead-ghost" aria-hidden="true"></div>
+<main class="content" id="quarto-document-content">
+<!-- About-page banner — burgundy accent via the `about` body class. -->
+<div class="jc-banner">
+  <div class="jc-banner-circle" aria-hidden="true"></div>
+  <div class="jc-banner-label">About</div>
+</div>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">About Jasper</h1>
 </div>
 
 
 
+<div class="quarto-title-meta">
 
-<!-- Homepage intro blurb lives in its own editable partial. -->
-<!-- ──────────────────────────────────────────────────────────────
-     HOMEPAGE INTRO BLURB  —  this is the file to edit.
+    
+  
+    
+  </div>
+  
 
-     The text inside the ::: block below renders on the homepage,
-     between the masthead and the Writing section. index.qmd pulls it
-     in with `{{< include _home-blurb.qmd >}}`, so you never touch
-     index.qmd — just edit the prose here and re-render.
 
-     Keep it short (a sentence or two). Plain Markdown works:
-     *italic*, **bold**, and [links](https://example.com). Leave the
-     wrapping ::: {.jc-home-intro} fence in place — it carries the
-     lede styling.
-     ────────────────────────────────────────────────────────────── -->
-<div class="jc-home-intro">
-<p>This is my website where I write about things which interest me, usually from a healthcare analyst perspective. I also showcase some coding projects which others might find useful. For more details about who I am, please see the About Me page.</p>
+</header>
+
+
+<div class="grid">
+<div class="g-col-12 g-col-md-8">
+<p>I am a Principal Analyst at Nottingham University Hospitals, working across Quality and Nursing — helping clinical and operational teams understand their data and make better-informed decisions.</p>
+<p>My background is unconventional: Mathematics at university, a spell at bible college, then Chartered Accountancy through a career in internal audit, before moving into NHS analytical roles.</p>
+<p>That combination of quantitative training and audit experience shapes how I approach data work, with a persistent interest in rigour, governance, and trustworthy analytical practice.</p>
+<div class="jc-chip-section">
+<div class="jc-sidebar-label">
+<p>Currently writing about</p>
 </div>
-<div class="jc-home-section" style="--accent: var(--jc-forest);">
-<div class="jc-section-header">
-<span>Writing</span><a href="./writing/index.html" class="jc-section-all">All writing →</a>
-</div>
-<div id="listing-home-writing" class="quarto-listing quarto-listing-container-custom">
-<div class="jc-card-list">
-<div class="jc-card">
-<div class="jc-card-title-row">
-<a class="jc-card-title" href="./writing/piece3_final.html">The NHS is addicted to building dashboards. Is it time for a detox?</a><span class="jc-card-date">Jun 2026</span>
-</div>
-<div class="jc-card-desc">
-Why dashboards don’t work as intended, and what comes next.
-</div>
-</div>
-<div class="jc-card">
-<div class="jc-card-title-row">
-<a class="jc-card-title" href="./writing/piece2_final.html">Analytics is becoming a profession. Is your organisation leading or following?</a><span class="jc-card-date">May 2026</span>
-</div>
-<div class="jc-card-desc">
-Why organisations that lead and celebrate the professionalisation of analysts will benefit the most.
-</div>
-</div>
-<div class="jc-card">
-<div class="jc-card-title-row">
-<a class="jc-card-title" href="./writing/piece1_audit_plan.html">Analytical Governance — Self-Assessment Tool</a><span class="jc-card-date">May 2026</span>
-</div>
-<div class="jc-card-desc">
-A practical assessment tool for evaluating the governance, quality controls, and ownership arrangements of analytical products.
-</div>
-</div>
+<div id="listing-about-categories" class="quarto-listing quarto-listing-container-custom">
+<!-- "Currently writing about" chips on the About page, built from the published
+     writing pieces: the 3 most recent DISTINCT first-categories (this listing is
+     sorted date desc), each linking to that category's group heading on the
+     Writing index (slug matches the id from _card-index-writing.ejs). Adding or
+     retiring pieces updates these automatically.
+
+     EJS caveat: keep ALL commentary in this HTML comment. Quarto's EJS engine
+     collapses each  block to one line, so a // line comment inside the
+     scriptlet swallows the rest of the code (and /* */ throws). See the
+     quarto-ejs-constraints memory. -->
+<div class="jc-chip-row">
+<p><a class="jc-chip" href="writing/index.html#engaging-analysis">Engaging Analysis</a></p>
+<p><a class="jc-chip" href="writing/index.html#analyst-development">Analyst Development</a></p>
+<p><a class="jc-chip" href="writing/index.html#analytical-governance">Analytical Governance</a></p>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </div>
-<div class="jc-home-section" style="--accent: var(--jc-navy);">
-<div class="jc-section-header">
-<span>Projects</span><a href="./projects/index.html" class="jc-section-all">All projects →</a>
 </div>
-<div id="listing-home-projects" class="quarto-listing quarto-listing-container-custom">
-<div class="jc-card-list">
-<div class="jc-card" style="display:flex;gap:18px;align-items:flex-start;">
-<div class="jc-dot">
-
-</div>
-<div style="flex:1;min-width:0;">
-<div class="jc-card-title-row">
-<a class="jc-card-title" href="./projects/qvdr.html">qvdr</a><span class="jc-category">R Packages</span><a class="jc-read-more" href="./projects/qvdr.html" style="margin-left:auto;flex-shrink:0;">View →</a>
-</div>
-<div class="jc-card-desc">
-An R package that reads QVD (QlikView Data) binary files into R tibbles. QVDs are Qlik’s proprietary columnar data format, designed for fast storage and retrieval but awkward to use outside Qlik. Being able to read them directly helps keep analytical inputs and outputs consistent.
+<div class="g-col-12 g-col-md-4">
+<!--
+  Portrait slot. Drop a photo in at images/portrait.jpg and swap the
+  placeholder below for the <img> (already written, just uncomment).
+  A real portrait makes a meaningful difference to how this page reads.
+-->
+<!--
+<div class="jc-portrait-placeholder" style="aspect-ratio:4/5;width:100%;background:var(--accent-band);border:1px solid var(--jc-border);border-top:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--font-body);font-size:0.6rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);">Your Portrait Here</div> 
+-->
+<p><img src="images/portrait.jpeg" alt="Jasper Cain" style="width:100%;border-top:2px solid var(--accent);"></p>
 </div>
 </div>
-</div>
-<div class="jc-card" style="display:flex;gap:18px;align-items:flex-start;">
-<div class="jc-dot">
-
-</div>
-<div style="flex:1;min-width:0;">
-<div class="jc-card-title-row">
-<a class="jc-card-title" href="./projects/statistics-methods-primer.html">Statistics Methods Primer</a><span class="jc-category">Educational Resources</span><a class="jc-read-more" href="./projects/statistics-methods-primer.html" style="margin-left:auto;flex-shrink:0;">View →</a>
-</div>
-<div class="jc-card-desc">
-A reference source for NHS analysts without a formal statistical background. Common concepts and tests are explained in clear language, with example R code on NHS-style data. It should keep growing as more topics are added — collaboration welcome.
-</div>
-</div>
-</div>
-<div class="jc-card" style="display:flex;gap:18px;align-items:flex-start;">
-<div class="jc-dot">
-
-</div>
-<div style="flex:1;min-width:0;">
-<div class="jc-card-title-row">
-<a class="jc-card-title" href="./projects/recipe-app.html">Recipe App</a><span class="jc-category">AI Projects</span><a class="jc-read-more" href="./projects/recipe-app.html" style="margin-left:auto;flex-shrink:0;">View →</a>
-</div>
-<div class="jc-card-desc">
-Indexes recipes from specified websites and lets you search by the ingredients you want to use and the cuisine you prefer. My first app — fully vibe-coded with Claude, and a useful lesson in how easily you can build something that “works” without understanding the tools underneath.
-</div>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+<hr>
+<section id="work" class="level2">
+<h2 class="anchored" data-anchor-id="work">Work</h2>
+<!-- Trailing backslashes = hard line breaks: without them Markdown soft-wraps
+     the role line and its description into one run-on paragraph. -->
+<p><strong>Principal Analyst</strong> · Nottingham University Hospitals NHS Trust · <em>present</em><br>
+Leading analytics across Quality and Nursing, helping clinical and operational teams understand their data and make better-informed decisions.</p>
+<p><strong>Chartered Accountant (ACCA)</strong> · NHS Internal Audit · <em>previous</em><br>
+Trained and worked in internal audit across NHS organisations, developing expertise in governance, risk, and analytical rigour.</p>
+<p><strong>Deputy Director of Finance</strong> · Association of Professional Healthcare Analysts · <em>ongoing</em><br>
+Serving the broader NHS analytical community and contributing to discussions about the future of analytical services in healthcare.</p>
+<hr>
+</section>
+<section id="get-in-touch" class="level2">
+<h2 class="anchored" data-anchor-id="get-in-touch">Get in touch</h2>
+<div class="about-links">
+<p><a href="https://www.linkedin.com/in/jasper-cain-a56a6ba6/" class="btn btn-outline-primary">LinkedIn</a> <a href="https://github.com/JasperCain01" class="btn btn-outline-secondary">GitHub</a> <a href="mailto:jcainsecondemail@gmail.com" class="btn btn-outline-secondary">Email</a></p>
 </div>
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

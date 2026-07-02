@@ -7,5 +7,34 @@
       "/writing/piece1_audit_plan.html",
       "/writing/piece1_final.html"
     ]
+  },
+  {
+    "listing": "/about.html",
+    "items": [
+      "/writing/piece3_final.html",
+      "/writing/piece2_final.html",
+      "/writing/piece1_audit_plan.html",
+      "/writing/piece1_final.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/writing/piece3_final.html",
+      "/writing/piece2_final.html",
+      "/writing/piece1_audit_plan.html",
+      "/writing/piece1_final.html",
+      "/projects/qvdr.html",
+      "/projects/statistics-methods-primer.html",
+      "/projects/recipe-app.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/qvdr.html",
+      "/projects/statistics-methods-primer.html",
+      "/projects/recipe-app.html"
+    ]
   }
 ]

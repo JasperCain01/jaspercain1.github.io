@@ -1,0 +1,569 @@
+/* ================================================
+   site.css — Quarto integration glue for brand.css
+   ================================================
+   Kept separate so brand.css stays byte-identical to
+   the Claude Design handoff. Only Quarto-specific
+   plumbing that the design tokens can't express lives
+   here. Loaded after brand.css in _quarto.yml.
+   ================================================ */
+
+/* The custom sidebar header (the JC mark block) already carries the name,
+   so hide Quarto's auto-generated duplicate sidebar title link. The tools
+   row (GitHub icon) is a sibling and is kept, just re-centred under the mark. */
+.sidebar-header .sidebar-title > a { display: none; }
+.sidebar-header .sidebar-title { text-align: center; margin-top: -0.25rem; }
+.sidebar-header .sidebar-tools-main { float: none; display: inline-flex; }
+.sidebar-header .quarto-navigation-tool { color: var(--jc-muted); }
+.sidebar-header .quarto-navigation-tool:hover { color: var(--accent); }
+
+/* ── Banner full-bleed + flush-top ───────────────
+   The banner/masthead is injected inside main.content, which occupies the
+   body-content grid column. To make it bleed past that column we use
+   negative margin-left + an oversized width. These numbers are NOT magic:
+   they are derived from the gutters in our own (overridden) grid above,
+   so they hold at every width ≥992px.
+
+   1. TOP: two Quarto rules add space above the content. #quarto-content > *
+      { padding-top: 14px } (specificity (1,0,0)), AND the bare element rule
+      main { margin-top: 1em } — the latter is the real offender on the docked
+      layout (Quarto's main.content{margin-top:0} reset only applies to the
+      About-page layouts, so here the 1em wins and dropped the banner ~17px
+      below the viewport top). We zero BOTH padding-top and margin-top with
+      !important so the banner/masthead sits truly flush (measured: top=0).
+
+   2. LEFT: main.content starts at body-content-start, 1.5em right of
+      body-start (the sidebar's right edge). margin-left: -1.5em pulls the
+      banner's left edge flush against the sidebar.
+
+   3. RIGHT: main.content ends at body-content-end, which our grid places
+      3em from screen-end (1.5em + collapsed 0fr + 1.5em). Extending the
+      width by that 3em (on top of the 1.5em reclaimed on the left) takes
+      the banner clean to the right viewport edge — full bleed, while the
+      reading text keeps its 3em right margin. Hence calc(100% + 4.5em). */
+#quarto-document-content { padding-top: 0 !important; margin-top: 0 !important; }
+
+/* The -1.5em/+4.5em numbers only exist on the ≥992px docked grid (see the
+   grid override at the bottom of this file), so the bleed MUST stay scoped
+   to ≥992px. Unscoped, it made every page ~120px wider than a phone screen
+   (masthead measured 511px in a 390px viewport → sitewide horizontal
+   scroll and clipped body text). */
+@media (min-width: 992px) {
+  .jc-banner,
+  .jc-masthead {
+    margin-left: -1.5em;
+    width: calc(100% + 4.5em);
+  }
+}
+
+/* Below 992px the docked grid is gone, so bleed with viewport units instead:
+   calc(50% - 50vw) reaches the true screen edge whatever padding Quarto puts
+   on the mobile content column. 100vw includes a classic scrollbar's width,
+   so clip the few stray pixels on body rather than letting them re-create a
+   horizontal scroll on narrow desktop windows. */
+@media (max-width: 991.98px) {
+  .jc-banner,
+  .jc-masthead {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+  body { overflow-x: clip; }
+}
+
+/* The banner ends with margin-bottom:0, so the page title would follow
+   immediately with no breathing room. The adjacent-sibling selector
+   targets only pages where a banner precedes the title block (all
+   content pages) — the homepage is excluded because its empty title
+   block comes BEFORE the masthead, not after a banner. */
+.jc-banner + #title-block-header { padding-top: 1.5rem; }
+
+/* On the homepage, Quarto emits an EMPTY #title-block-header before the
+   masthead (the page has no title). Zeroing its margin wasn't enough — it
+   still occupied vertical space and held the masthead ~17px below the top.
+   Remove it from layout entirely so the masthead is the first in-flow child
+   of main and sits flush against main's zeroed top padding. :empty only
+   matches this title-less header, so pages WITH a title are unaffected. */
+#title-block-header:empty { display: none; }
+
+/* ── Brand tuning overrides ──────────────────────
+   These values were tuned AFTER the Claude Design handoff (larger
+   base font, larger sidebar mark/name/rule/nav, removal of the
+   720px reading-width cap, square project bullets, and a tinted
+   pullquote fill). They live here — NOT in brand.css — so
+   brand.css stays byte-identical to the handoff and a future
+   handoff update can be dropped in without a manual merge.
+   site.css loads after brand.css, so equal-specificity rules
+   here win on cascade order. */
+
+/* Base reading size: 16px felt small for this body font. */
+body { font-size: 17px; }
+
+/* Dark-mode neutral accent. brand.css remaps every token for dark EXCEPT
+   --accent, whose :root value is light-mode ink (#1A1917) — invisible on the
+   dark background wherever no section body-class overrides it (homepage and
+   any neutral page: the sidebar JC mark, the active nav item, the sidebar
+   rule). Map it to --jc-neutral, which brand.css already defines per scheme
+   and which equals ink in light mode, so light mode is unchanged. */
+@media (prefers-color-scheme: dark) {
+  :root { --accent: var(--jc-neutral); }
+}
+
+/* Sidebar JC mark scaled up to fill the wider docked sidebar. */
+.jc-mark { width: 66px; height: 66px; font-size: 23px; }
+
+/* Sidebar name + rule + nav links scaled to match the larger mark. */
+.jc-sidebar-name { font-size: 0.95rem; }
+.jc-sidebar-rule { width: 34px; }
+.sidebar .sidebar-item a,
+.sidebar-item a { font-size: 1rem; }
+
+/* Remove the handoff's 720px content cap — Quarto's docked grid already
+   constrains the reading column to minmax(500px, ~950px), which is the
+   right width here. max-width:none lets the grid own the width. */
+#quarto-document-content,
+.content { max-width: none; }
+
+/* Square project bullets. The claude_design mockup showed square dots, but
+   the handoff brand.css implemented them round (border-radius:50%). Correct
+   to square here rather than in brand.css, to keep brand.css = handoff. */
+.jc-dot { border-radius: 0; }
+
+/* Pullquote tinted background. The mockup showed a filled background behind
+   blockquotes (plus the forest left-border from brand.css). brand.css is
+   border-only; add the fill here to match the design without editing brand.css. */
+blockquote { background: var(--jc-bg-raised); padding: 1rem 1.5rem; }
+
+/* ── Title block cleanup ─────────────────────────
+   Quarto injects several title-block elements that aren't in the mockup
+   design: category chip badges, description text, and a two-column
+   labelled author/date block. These rules suppress or reformat them. */
+
+/* Category chips are already shown in page banners and listing group labels;
+   the repeated Quarto chip below the page <h1> is redundant.
+   Bootstrap sets .quarto-title .quarto-categories { display:flex } (specificity
+   0-2-0), so match it exactly here to ensure none wins on cascade order. */
+.quarto-title .quarto-categories { display: none; }
+
+/* The description front-matter field is used as HTML <meta> only.
+   Quarto also renders it as visible text in the title block — suppress that. */
+.quarto-title-block .description { display: none; }
+
+/* Compact inline byline for writing pieces.
+   Brand.css already styles the meta text (italic, small, muted).
+   Here we collapse the two-column labelled grid into a single inline row
+   "Jasper Cain · May 2026 · 8 min" by hiding the labels and inserting
+   dot separators between each metadata item via ::before. */
+/* Bootstrap targets this with an ID selector: #title-block-header.quarto-title-block.default
+   .quarto-title-meta { display:grid } — specificity (1,3,0). Our class-only rule would lose,
+   so !important is needed to override the grid layout with flex for the compact byline. */
+.quarto-title-block .quarto-title-meta {
+  display: flex !important;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 1.25rem;
+}
+.quarto-title-block .quarto-title-meta > div { display: flex; align-items: baseline; }
+.quarto-title-block .quarto-title-meta-heading { display: none; }
+.quarto-title-block .quarto-title-meta > div + div::before {
+  content: '·';
+  margin: 0 0.4em;
+  color: var(--jc-muted);
+  font-style: normal;
+}
+.quarto-title-block .quarto-title-meta-contents p { margin: 0; }
+
+/* Project pages carry body-classes: project-page (set in projects/_metadata.yml).
+   Project pages don't show a date at all — only metadata grid via _project-meta.qmd.
+   Same Bootstrap ID specificity problem — !important needed to override. */
+.project-page .quarto-title-meta { display: none !important; }
+
+/* ── Phase 2 design components ──────────────────
+   New components wired up in Phase 2. All new .jc-* rules live here,
+   never in brand.css, per the site.css / brand.css split discipline. */
+
+/* Index page group labels — category/type subheadings with fading hairline rule.
+   IDs on these divs are slugged category names used by the sidebar anchor filter. */
+.jc-group-label {
+  font-family: var(--font-body);
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+.jc-group-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.2;
+}
+
+/* Card title row — title + right-aligned date (or inline category + view link)
+   on one line. Overrides brand.css .jc-card-title display:block only within a
+   title row so all other .jc-card-title uses are unaffected. */
+.jc-card-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  margin-bottom: 0.4rem;
+}
+.jc-card-title-row .jc-card-title {
+  flex: 1;
+  display: inline;  /* override brand.css display:block */
+  margin-bottom: 0;
+}
+.jc-card-date {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  color: var(--jc-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Hover cue on listing cards: the title takes the section accent. Cards had
+   no hover response at all (brand.css only dims bare links via opacity). */
+.jc-card .jc-card-title { transition: color 0.15s ease; }
+.jc-card:hover .jc-card-title { color: var(--accent); }
+
+/* Homepage intro blurb (content of _home-blurb.qmd) — sits between the masthead
+   and the Writing section. Styled as a quiet lede: slightly larger, muted, and
+   line-length-capped for readability even though the page bleeds full-width. */
+.jc-home-intro {
+  font-family: var(--font-body);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--jc-secondary);
+  max-width: 62ch;
+  margin: 2rem 0 0.5rem;
+}
+.jc-home-intro p:last-child { margin-bottom: 0; }
+
+/* Homepage section containers — each section gets its own --accent override
+   inline (forest for Writing, navy for Projects) so all child jc-* classes
+   recolour automatically without per-child rules. */
+.jc-home-section {
+  margin-bottom: 3rem;
+}
+
+/* Section header flex order fix: brand.css places ::after last in source order,
+   but the intended visual is [label] [rule] [link]. Reordering with flex order
+   properties puts ::after (the fading hairline) between label and link. */
+.jc-section-header::after { order: 1; }
+.jc-section-all { order: 2; }
+
+/* Remove default paragraph margins inside project meta cells — Pandoc wraps
+   cell content in <p> tags; these margins would break the compact cell sizing. */
+.jc-project-meta-label p,
+.jc-project-meta-value p { margin: 0; }
+
+/* Editorial homepage masthead — replaces the small ghost-circle banner. */
+.jc-masthead {
+  position: relative;
+  background: var(--jc-bg-tint);
+  padding: 2.5rem 2.5rem 1.75rem;
+  border-bottom: 3px solid var(--jc-ink);
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.jc-masthead-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--jc-secondary);
+  margin-bottom: 0.5rem;
+}
+.jc-masthead-name {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--jc-ink);
+  line-height: 1.1;
+  margin: 0;
+}
+/* Faint ghost MONOGRAM (circular JC mark) bleeding off the top-right.
+   Mirrors the .jc-banner-circle treatment used on the section banners so the
+   homepage echoes the same brand logo, not bare initials. The masthead's
+   overflow:hidden clips the circle where it bleeds past the right edge. */
+.jc-masthead-ghost {
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--jc-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--jc-ink);
+  opacity: 0.07;
+  user-select: none;
+  pointer-events: none;
+  line-height: 1;
+}
+
+/* Mono repo URL displayed under each project page title. */
+.jc-repo-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  margin-top: -0.75rem;
+  margin-bottom: 1.75rem;
+}
+.jc-repo-subtitle a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.jc-repo-subtitle a:hover { opacity: 0.7; }
+
+/* Bordered metadata grid on project pages (language / status / license).
+   Adjacent cells share borders via negative-margin collapse. Three columns,
+   NOT two: with three cells a 2-column grid rendered a fourth, empty
+   bordered box that read as a rendering mistake on every project page. */
+.jc-project-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--jc-border);
+  margin: 2rem 0;
+}
+@media (max-width: 767.98px) {
+  .jc-project-meta { grid-template-columns: 1fr; }
+}
+.jc-project-meta-cell {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--jc-border);
+  /* Collapse cell borders so we get single-pixel lines between cells. */
+  margin: -1px 0 0 -1px;
+}
+.jc-project-meta-label {
+  font-family: var(--font-body);
+  font-size: 0.52rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--jc-navy);
+  margin-bottom: 0.25rem;
+}
+.jc-project-meta-value {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--jc-ink);
+}
+
+/* Solid filled CTA button — replaces Bootstrap btn-outline-primary.
+   Square corners match the brand; accent background shifts per section. */
+.jc-cta {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--jc-bg) !important;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  border-radius: 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.jc-cta:hover { opacity: 0.85; color: var(--jc-bg) !important; }
+
+/* "Currently writing about" chip row on the About page. */
+.jc-chip-section { margin-top: 1.5rem; }
+.jc-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+/* Pandoc wraps inline chips in <p>; display:contents makes it transparent
+   so the <span class="jc-chip"> elements become direct flex children. */
+.jc-chip-row > p { display: contents; }
+.jc-chip {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--jc-secondary);
+  border: 1px solid var(--jc-border);
+  padding: 0.3rem 0.65rem;
+  border-radius: 0;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  display: inline-block;
+}
+.jc-chip:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── Sidebar search skin ─────────────────────────
+   Quarto's search widget ships Bootstrap styling: rounded input, blue focus
+   ring, #2780e3 selection, hardcoded white surfaces (which also glare in
+   dark mode). Re-skin to the brand tokens. Selector lists mirror Quarto's
+   generated bootstrap bundle exactly (docked dropdown #quarto-search-results
+   plus the detached mobile overlay) so cascade order decides — site.css
+   loads after the bundle. */
+#quarto-search .aa-Autocomplete .aa-Form {
+  background-color: var(--jc-bg);
+  border: 1px solid var(--jc-border);
+  border-radius: 0;
+  color: var(--jc-ink);
+}
+#quarto-search .aa-Autocomplete .aa-Form:focus-within {
+  box-shadow: none;
+  border-color: var(--accent);
+}
+#quarto-search input {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--jc-ink);
+}
+.aa-DetachedOverlay .aa-Panel,
+#quarto-search-results .aa-Panel {
+  background-color: var(--jc-bg);
+  border: 1px solid var(--jc-border);
+  border-radius: 0;
+  font-family: var(--font-body);
+}
+.aa-DetachedOverlay .aa-Item .search-item,
+#quarto-search-results .aa-Item .search-item,
+.aa-DetachedOverlay li.aa-Item[aria-selected=false] .search-item,
+#quarto-search-results li.aa-Item[aria-selected=false] .search-item,
+.aa-DetachedOverlay li.aa-Item[aria-selected=false] .search-item .search-result-section,
+.aa-DetachedOverlay li.aa-Item[aria-selected=false] .search-item .search-result-text,
+.aa-DetachedOverlay li.aa-Item[aria-selected=false] .search-item .search-result-title-container,
+.aa-DetachedOverlay li.aa-Item[aria-selected=false] .search-item .search-result-text-container,
+#quarto-search-results li.aa-Item[aria-selected=false] .search-item .search-result-section,
+#quarto-search-results li.aa-Item[aria-selected=false] .search-item .search-result-text,
+#quarto-search-results li.aa-Item[aria-selected=false] .search-item .search-result-title-container,
+#quarto-search-results li.aa-Item[aria-selected=false] .search-item .search-result-text-container,
+.aa-DetachedOverlay .aa-Item .search-result-doc:not(.document-selectable) .search-result-title-container,
+#quarto-search-results .aa-Item .search-result-doc:not(.document-selectable) .search-result-title-container {
+  background-color: var(--jc-bg);
+  border-color: var(--jc-border);
+  color: var(--jc-ink);
+}
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item,
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item.search-result-more,
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item .search-result-section,
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item .search-result-text,
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item .search-result-title-container,
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item .search-result-text-container,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item.search-result-more,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-result-section,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-result-text,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-result-title-container,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-result-text-container {
+  background-color: var(--accent);
+  color: var(--jc-bg);
+}
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item mark.search-match,
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item .search-match.mark,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item mark.search-match,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-match.mark {
+  background-color: transparent;
+  color: var(--jc-bg);
+  text-decoration: underline;
+}
+.aa-DetachedOverlay li.aa-Item[aria-selected=false] .search-item mark.search-match,
+.aa-DetachedOverlay li.aa-Item[aria-selected=false] .search-item .search-match.mark,
+#quarto-search-results li.aa-Item[aria-selected=false] .search-item mark.search-match,
+#quarto-search-results li.aa-Item[aria-selected=false] .search-item .search-match.mark {
+  background-color: var(--accent-band);
+  color: inherit;
+}
+/* "N matching documents" strip — hardcoded hsl(0,0%,95%) glares in dark. */
+.aa-DetachedOverlay .aa-SourceHeader .search-result-header,
+#quarto-search-results .aa-SourceHeader .search-result-header {
+  background-color: var(--jc-bg-raised);
+  color: var(--jc-secondary);
+  font-family: var(--font-body);
+}
+
+/* The ghost circles' "JC" is decorative. As a text node it was announced by
+   screen readers and swallowed into the search index (every article preview
+   began "JC There was once…"). The banner partials now leave the element
+   empty and the glyphs come from CSS content, which neither indexer nor
+   assistive tech sees. */
+.jc-banner-circle::before,
+.jc-masthead-ghost::before { content: 'JC'; }
+
+/* Anchor-link "FILTER BY CATEGORY / TYPE" list injected into the docked
+   sidebar on index pages. Appended by a page-specific include-after-body
+   script; styled to match the existing sidebar nav conventions. */
+.jc-sidebar-filter {
+  padding: 1.25rem 0 1rem;
+  border-top: 1px solid var(--jc-border);
+  margin-top: 1rem;
+}
+.jc-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.jc-filter-list li a {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--jc-secondary) !important;
+  padding: 0.15rem 0.65rem;
+  border-left: 2px solid transparent;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.jc-filter-list li a:hover { color: var(--accent) !important; }
+.jc-filter-list li a.active {
+  color: var(--accent) !important;
+  border-left-color: var(--accent);
+}
+
+/* ── Sidebar width + full-width content ──────────
+   Two changes to Quarto's docked grid, both ≥992px only:
+
+   1. Sidebar track: minmax(50px, 100px) (~224px total) → 150px (~274px),
+      a visually wider sidebar without touching any layout logic.
+
+   2. Reading column: the stock grid caps body-content at
+      minmax(500px, 1000px-3em) and pours ALL leftover width into a 5fr
+      track on the right. On wide monitors that leaves a large dead strip
+      (and is why the banner appeared to stop short of the right edge).
+      We change body-content to minmax(500px, 1fr) so it grows to fill the
+      viewport, and collapse the right 5fr track to 0fr. The content then
+      bleeds to the right with a normal margin: the trailing
+      1.5em + 1.5em (body-content-end→screen-end) gutters remain as the
+      reading margin. Line names are kept identical so the banner's
+      bleed math (below) and Quarto's own column classes stay valid.
+
+   Site.css loads after the Bootstrap/Quarto bundle, so same-specificity
+   rules here win via cascade order. */
+@media (min-width: 992px) {
+  body.docked .page-columns,
+  body.docked.fullcontent .page-columns,
+  body.docked.slimcontent .page-columns,
+  body.docked.listing .page-columns {
+    grid-template-columns:
+      [screen-start] 1.5em
+      [screen-start-inset page-start] minmax(50px, 150px)
+      [page-start-inset] 50px
+      [body-start-outset] 50px
+      [body-start] 1.5em
+      [body-content-start] minmax(500px, 1fr)
+      [body-content-end] 1.5em
+      [body-end body-end-outset page-end-inset page-end] 0fr
+      [screen-end-inset] 1.5em
+      [screen-end];
+  }
+}

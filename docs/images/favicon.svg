@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- JC roundel favicon — mirrors the sidebar .jc-mark (circle + serif JC).
+       The embedded media query follows the OS colour scheme, matching the
+       site's ink tokens: #1A1917 light / #ECE8E0 dark. -->
+  <style>
+    circle { stroke: #1A1917; }
+    text { fill: #1A1917; }
+    @media (prefers-color-scheme: dark) {
+      circle { stroke: #ECE8E0; }
+      text { fill: #ECE8E0; }
+    }
+  </style>
+  <circle cx="32" cy="32" r="29" fill="none" stroke-width="3.5"/>
+  <text x="32" y="33" text-anchor="middle" dominant-baseline="central"
+        font-family="'Libre Baskerville', Georgia, serif" font-size="24">JC</text>
+</svg>

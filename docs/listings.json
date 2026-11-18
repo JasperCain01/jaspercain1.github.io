@@ -1,5 +1,15 @@
 [
   {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/quarto-cheatsheet.html",
+      "/projects/garden-planner.html",
+      "/projects/qvdr.html",
+      "/projects/statistics-methods-primer.html",
+      "/projects/recipe-app.html"
+    ]
+  },
+  {
     "listing": "/writing/index.html",
     "items": [
       "/writing/piece3_final.html",
@@ -24,14 +34,8 @@
       "/writing/piece2_final.html",
       "/writing/piece1_audit_plan.html",
       "/writing/piece1_final.html",
-      "/projects/qvdr.html",
-      "/projects/statistics-methods-primer.html",
-      "/projects/recipe-app.html"
-    ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": [
+      "/projects/quarto-cheatsheet.html",
+      "/projects/garden-planner.html",
       "/projects/qvdr.html",
       "/projects/statistics-methods-primer.html",
       "/projects/recipe-app.html"
